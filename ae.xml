@@ -252,7 +252,7 @@ SLSDOCRF="sref"
 TYPE="POSTAL"
 COUNTRY="0"
 ><VERBATIM-ADDRESS
-> al-Shuwaheen Area, Cournich Rd, <CITY
+> al-Shuwaheen Area, Cournich Rd, <Sujan>THis is sujan</Sujan><CITY
 >Sharjah</CITY></VERBATIM-ADDRESS></ADDRESS><EMAIL
 >artsuae@eim.ae</EMAIL><WWW
 >www.artsuae.ae</WWW><FOUNDED
