@@ -1,0 +1,1604 @@
+<!-- ==================================================================
+
+Europa World Year Book
+
+Interim DTD
+
+Semantico
+32-33 Bond Street
+Brighton BN1 1RD
+Sussex  UK
+
+Tel: +44 (0)1273 722222
+Fax: +44 (0)1273 723232
+Web: http://www.semantico.com
+
+
+Revision info: $Id: interim_sgml.dtd,v 1.107 2004/10/15 10:57:09 brad Exp $
+==================================================================-->
+<!-- Converted to SGML DTD on 14.10.2002 by Harvey Thomas - empolis UK
+Reference as 
+        "-//Semantico//DTD SGML EWYB document 1.0//EN"
+Note also that the OASIS Exchange XML table DTD is also changed to its XML equivalent
+
+Interim DTD - This DTD has been optimised for data capture, we
+              envisage making some changes at some point in the 
+              future to make the whole dataset more coherent.
+              
+This DTD should be referenced with the following public identifier:
+
+              "-//Semantico//DTD EWYB document 1.0//EN"  **SUPERSEDED SEE ABOVE**
+
+-->
+<!-- CONTENTS
+  0. empolis UK Ltd additions
+  	0.1 Sigmalink Link Information
+  	0.2 All ISO entities "-//Semantico//ENTITIES ISO Entities//EN" added by Harvey Thomas of empolis UK
+  1. XML Exchange Table Model and parameter entities
+  2. EWYB major components
+  3. EWYB core
+	3.1 common/shared elements
+	3.2 Introductory survey elements
+	3.3 Statistical survey elements
+	3.4 Directory elements
+	3.5 Bibliography elements
+  4. Regional
+        4.1 Country Surveys and Essays
+  5. International Organisations 
+  6. Political Profiles 
+  7. Comparative Statistics
+-->
+<!-- ==================================================================
+     Recent changes
+
+date        version  xml_version changes
+==========  =======  =========== ========
+31-01-2005  1.108    1.302       Added is-sectref container for intro-survey sub docs in sigmalink. is-section and intro-survey amended accordingly. stats-survey changed to allow ss-sectref for sub-document linking.
+
+15-10-2004  1.107    1.301       Added directory-alternates and stats-survey-alternates
+
+05-10-2004  1.106    1.300       Added id to region; added %usage; to international-group and country
+
+20-08-2004  1.105    1.298       Corrected p-alternates attribute declaration
+
+19-08-2004  1.104    1.297       Corrected person-name to remove ambiguous content model, which means that it is a bit looser than it was.
+
+17-08-2004  1.103    1.296       Added a few more items to support mapping of IWW SGML to political-profiles; and loosened model of regional-overview slightly.
+
+26-07-2004  1.102    1.294       Made %component-list; #IMPLIED for org-entry, org-entry-expanded, int-org-entry and essay, since we don't need to enforce this for every occurrence.
+
+22-07-2004  1.101    1.293       Corrected some errors in the previous version: changed priority attribute from %component-list; to CDATA, since this isn't valid SGML (XML DTD retains the original form); corrected attribute declarations of p-alternates and seg-alternates; and removed extra bracket in declaration of gen-list.
+
+29-06-2004  1.100    1.293       major modifications to support alternates. See accompanying ewyb2_alternatives.html 
+
+09-06-2004  1.99     1.291       modification to gen-list and list-item to support better markup of treaties and legal documents; new element legal-block added to dir-section, int-org-section and gen-section; new region-overview element; new % media parameter entity to indicate print or online usage: use of the old usage attribute on figure is now deprecated; added type attribute to territory to support distinction between dependencies and states (ie Gibraltar as opposed to Alaska); %region added to org-entry, org-entry-expanded and int-org-entry; publ-name added to org-entry-name and alt-name
+
+12-01-2004  1.96     1.289       Some modifications at the request of Europa: 1. figure-group added to territory-simple; 2. alt-heading added to various Regional-only content; 3. last-revision made optional; 4. % usage added to table-block and table-block-simple.
+
+22-10-2003  1.95     1.287       Add country-scale attribute
+
+18-09-2003  1.92     1.287       Added comp-stats and its components; allowed this in the root ewyb element; parameterised the sect-type that occurs in ss-section, since it is also used in comp-stats. Comparative Statistics are only used for the online edition.
+
+
+
+-->
+
+<!-- ==================================================================
+ 0.1 Sigmalink Link Information
+-->
+<?IS10744 arch
+  name="SLlink"
+  public-id="-//STEP//NOTATION SigmaLink link architecture//EN"
+  dtd-public-id="-//STEP//DTD SigmaLink link architecture//EN"
+  renamer-att="SLNames"
+>
+
+<!-- ==================================================================
+ 0.2 ISO entities
+-->
+<!ENTITY % isoents PUBLIC "-//Semantico//ENTITIES ISO Entities//EN">
+%isoents;
+
+<!-- ==================================================================
+  1. XML Exchange Table Model
+-->
+<!-- ==================================================================
+-->
+<!-- EWYB parameter entities for content models -->
+<!ENTITY % simple-text " #PCDATA | i | b | sc | abbr | sub | sup | anchor | lbrace | rbrace ">
+<!ENTITY % free-text " %simple-text; | xr | endnoteref | footnote | date | seg | seg-alternates">
+<!-- The usage attribute is used on section divisions and heading elements to 
+indicate which print publications use the content. The available attributes indicate
+which print publication group this section should appear in-->
+<!-- possible values include:
+ewyb | edio | eerca | casee | we | fea | ass | sacac | mena 
+ -->
+<!ENTITY % usage "usage CDATA #IMPLIED">
+<!ENTITY % component-list "(ewyb | ass | casee | eerca | fea | mena | sasia | sacac | usac | we | edio | none)">
+<!ENTITY % revision-att 'revision-date CDATA #REQUIRED
+	revision-type	(new | secondary | reply | removed | typo | ownweb) #REQUIRED'>
+<!ENTITY % print-style 'print-style (pgwidth | column)'>
+<!ENTITY % stats-sections "sect-type (area-population | health-welfare | agriculture | forestry | fishing | agriculture-forestry-fishing | mining | industry | finance | external-trade | transport | tourism | communications-media | education)">
+<!ENTITY % media 'media (print | online | printandonline) '>
+<!ENTITY % alternates-attributes '
+  type (alternates) #REQUIRED
+  default %component-list; #REQUIRED
+  priority CDATA #IMPLIED'>
+<!-- Sigmalink parameter entities for subdocs -->
+<!ENTITY % slref-att 'id ID #IMPLIED
+SLfilename CDATA #IMPLIED
+SLlink     NAME  #FIXED "SLsdocrf"
+SLlinkid   CDATA #IMPLIED
+SLsdocid   CDATA #IMPLIED'>
+
+<!ENTITY % slcall-att 'SLlink   NAME #FIXED "SLsdoc"
+id-root    CDATA #IMPLIED
+iso        CDATA #IMPLIED
+section    CDATA #IMPLIED
+subsection CDATA #IMPLIED'>
+
+<!-- ==================================================================
+  Modifications or additions to XML Exchange Table Model
+-->
+<!-- EWYB utilises its own table header model, and includes XML Exchange 
+     model, renaming a few of the components-->
+<!ENTITY % yesorno 'NMTOKEN'> 
+<!ENTITY % tbl.table.name 'table'>
+<!ENTITY % tbl.table.att '
+style (with-rules | without-rules) "with-rules"
+pgwide      %yesorno;       #IMPLIED '>
+<!ENTITY % tbl.table.mdl "heading?, tgroup">
+<!ENTITY % paracon "%free-text; | endnote">
+<!ENTITY % tbl.table-titles.mdl "">
+<!ENTITY % tbl.entry.att '
+style (dot-leader | no-dot-leader ) "no-dot-leader" '>
+<!-- ==================================================================
+
+Invoke the OASIS-OPEN XML Exchange Table Model
+
+ -->
+<!ENTITY % calstblx PUBLIC "-//OASIS//DTD SGML XML Exchange Table Model 19990315//EN">
+%calstblx;
+<!-- ==================================================================
+  EWYB Table container (with heading)
+-->
+<!ELEMENT table-blockref - - (table-block)?>
+<?ATTLINK table-block id "SLT">
+<!-- ==================================================================
+  EWYB Table container (without heading)
+-->
+<!ELEMENT table-block-simple - - ((%tbl.table.name;)?, ss-entry-data*, endnote*, (sources | note)*)>
+<!ATTLIST table-block-simple
+id ID #REQUIRED
+type (other) "other"
+%usage;
+>
+<?ATTLINK table-block-simple id "SLT">
+<!-- ==================================================================
+  EWYB Table heading
+-->
+<!ELEMENT table-heading - - (%free-text;)*>
+<!-- ==================================================================
+  2. EWYB components
+-->
+<!-- ==================================================================
+  Root element
+-->
+<!ELEMENT ewyb - - ((international-group | country-group | region-group | other-group | comp-stats)* | (div | frontmatter | backmatter)*)>
+<!-- ==================================================================
+  Country container
+-->
+<!ELEMENT country-group - - (country | territory-simple)+>
+<!-- ==================================================================
+  Regional container
+-->
+<!ELEMENT region-group - - (region)+>
+<!-- ==================================================================
+  Container for international organisations
+-->
+<!ELEMENT international-group - - (heading, essay-group?, chronology*, int-org-group+, political-profile-group?)>
+<!ATTLIST international-group
+id ID #REQUIRED
+iso CDATA #REQUIRED
+%usage;
+>
+<!-- ==================================================================
+  Container for other miscellaneous components
+-->
+<!ELEMENT other-group - - (frontmatter | backmatter | gen-section | div)*> 
+<!-- ==================================================================
+  Country
+  This is the container for all data components relating to a specific country, whether it occurs in core EWYB or a Regional Survey 
+-->
+<!ELEMENT country - - (name, alpha-name, sub-name?, country-overview?, (country-territory-content?, (territory-group | territory | territory-simple)*, bibl-section*))>
+<!ATTLIST country
+region %component-list; #REQUIRED
+iso CDATA #REQUIRED
+id ID #IMPLIED
+%usage;
+>
+<!-- ==================================================================
+  Country or territory name
+-->
+<!ELEMENT name - - (#PCDATA)>
+<!-- ==================================================================
+  Alphasort version of the country or territory name
+-->
+<!ELEMENT alpha-name - - (#PCDATA)>
+<!-- ==================================================================
+  Additional country or territory name, eg Holy See
+-->
+<!ELEMENT sub-name - - (#PCDATA)>
+<!-- ==================================================================
+  Country or territory content
+-->
+<!ELEMENT country-territory-content - - (intro-survey?, intro-group?, (stats-survey| stats-survey-alternates)?, (directory | directory-alternates))>
+<!-- ==================================================================
+  Regionally-specific country information
+-->
+<!ELEMENT intro-group - - (essay-group | country-survey)+>
+<!-- ==================================================================
+  Region container
+  This is the container for all data components that only relate to a region; it does not include country-specific material
+-->
+<!ELEMENT region - - (name, alpha-name, (region-overview?, chronology?, essay-group, res-institutes?, political-profile-group?, commodities?, weights-and-measures?, bibl-section?, periodicals?))>
+<!ATTLIST region
+region %component-list; #REQUIRED
+id ID #REQUIRED
+%usage;
+>
+<!-- ==================================================================
+  Non-country-specific Chronology 
+-->
+<!ELEMENT chronology - - (revision-list?, heading, alt-heading*, chron-list?, gen-section*)>
+<!ATTLIST chronology
+xmlns CDATA #IMPLIED
+original-filename CDATA #REQUIRED
+id ID #REQUIRED
+id-root    CDATA #IMPLIED
+region %component-list; #REQUIRED
+%usage; 
+>
+<?ATTLINK chronology id "SLT">
+<!-- ==================================================================
+  Division (ostensibly for print only)
+-->
+<!ELEMENT div - - (heading, (essay-group | intro-survey | intro-group | stats-survey | stats-survey-alternates | directory | directory-alternates | dir-sectref | dir-section | dir-section-alternates | ss-sectref | ss-section | ss-section-alternates | bibl-section | gen-sectref | gen-section | gen-section-alternates | div | p | p-alternates | territory-simple | territory-group)*)>
+<!ATTLIST div
+  part NMTOKEN #IMPLIED
+  id ID #REQUIRED
+  sect-type CDATA #IMPLIED
+  %usage; 
+>
+<!-- ==================================================================
+  Essays
+-->
+<!ELEMENT essay-group - - (heading?, (essay-ref | essay)*, (bibl-ref | bibl-section)*, essay-group*)> 
+<!-- ==================================================================
+  Research Institutes
+-->
+<!ELEMENT res-institutes - - (heading, alt-heading*, heading-note?, dir-section+)>
+<!ATTLIST res-institutes
+id ID #IMPLIED
+id-root CDATA #IMPLIED
+>
+<?ATTLINK res-institutes id "SLT">
+<!-- ==================================================================
+  People Profiles
+-->
+<!ELEMENT political-profile-group - - (heading, alt-heading*, (person-entry+ | letter+))>  
+<!ATTLIST political-profile-group  
+id ID #IMPLIED
+id-root CDATA #IMPLIED
+region %component-list; #REQUIRED
+%usage;  
+>  
+<?ATTLINK political-profile-group id "SLT">
+<!-- ==================================================================
+ Letter group for political profiles 
+-->
+<!ELEMENT letter - - (heading, person-entry+)>
+<!-- ==================================================================
+  Commodities
+-->
+<!ELEMENT commodities - - (heading, alt-heading*, heading-note?, commodities-note?, gen-section+)>
+<!ATTLIST commodities
+id ID #IMPLIED
+id-root CDATA #IMPLIED
+>
+<?ATTLINK commodities id "SLT">
+<!-- ==================================================================
+  Commodities note
+-->
+<!ELEMENT commodities-note - - (%simple-text;)*>
+<!-- ==================================================================
+  Frontmatter container
+-->
+<!ELEMENT frontmatter - - (gen-sectref | gen-section)+> 
+<!-- ==================================================================
+  Backmatter container
+-->
+<!ELEMENT backmatter - - (gen-section)+> 
+<!-- ==================================================================
+  3. EWYB core
+-->
+<!-- 3.1 common/shared elements -->
+<!-- ==================================================================
+  General list
+-->
+<!ELEMENT gen-list - - (item+ | (item-name, item+)+ | (date, item)+ | (label, item)+)>
+<!-- ==================================================================
+  List item
+-->
+<!ELEMENT item - - (%free-text; | definition | p | gen-list)*> 
+<!ATTLIST item id ID #IMPLIED> 
+<!-- ==================================================================
+  List item head
+-->
+<!ELEMENT item-name - - (#PCDATA)>
+<!-- ==================================================================
+  List item label (eg numeric)
+-->
+<!ELEMENT label - - (%simple-text;)*>
+<!-- ==================================================================
+  Item definition
+-->
+<!ELEMENT definition - - (%simple-text;)*>
+<!-- ==================================================================
+   Heading. We may need to store some sort of "heading level"...
+-->
+<!ELEMENT heading - - (%free-text;)*>
+<!ATTLIST heading
+%usage; 
+>
+<!-- ==================================================================
+   Heading Translation
+-->
+<!ELEMENT heading-trans - - (#PCDATA)>
+<!-- ==================================================================
+  Head note
+-->
+<!ELEMENT heading-note - - (%free-text;)*>
+<!ATTLIST heading-note  
+type (primary | secondary) #IMPLIED  
+>  
+<!-- ==================================================================
+  Alternative heading (used for running heads in print and for certain display positions 
+  online)
+-->
+<!ELEMENT alt-heading - - (%free-text;)*>
+<!ATTLIST alt-heading
+%usage; 
+type (country-long-TitleCase | country-short-UPPERCASE | country-short-TitleCase | section-long-UPPERCASE | section-long-TitleCase | section-short-UPPERCASE | section-short-TitleCase) #IMPLIED
+>
+<!-- ==================================================================
+  Endnote elements
+-->
+<!ELEMENT endnote - - (%free-text; | sources | gen-list | internet | address | email | fax | telephone)*>
+<!ATTLIST endnote
+id ID #REQUIRED
+ref-symbol CDATA #REQUIRED
+>
+<?ATTLINK endnote id "SLT">
+<!ELEMENT endnoteref - o EMPTY>
+<!ATTLIST endnoteref
+idref NAME #IMPLIED
+id  ID #IMPLIED
+slid CDATA #IMPLIED
+sltargetid CDATA #IMPLIED
+--the value of the sltargetid attribute should match the value of the ID attribute on the target.--
+>
+<?ATTLINK endnoteref slid "SLA">
+<!-- ==================================================================
+  Footnote element
+-->
+<!ELEMENT footnote - - (%free-text;)*>
+<!ATTLIST footnote
+id ID #REQUIRED
+ref-symbol CDATA #REQUIRED
+>
+<?ATTLINK footnote id "SLT">
+<!-- ==================================================================
+  Alternate paragraphs. 
+-->
+<!ELEMENT p-alternates - - (p)+>
+<!ATTLIST p-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Normal paragraphs. 
+-->
+<!ELEMENT p - - (%free-text; | person-name | org-entry-name | address-block | publ-name)*>
+<!ATTLIST p
+id ID #IMPLIED
+%usage;
+>
+<?ATTLINK p id "SLT">
+<!-- ==================================================================
+  Paragraph group 
+-->
+<!ELEMENT p-group - - (heading, p+)>
+<!ATTLIST p-group
+id ID #IMPLIED
+>
+<?ATTLINK p-group id "SLT">
+<!-- ==================================================================
+  Alternate segments 
+-->
+<!ELEMENT seg-alternates - - (seg)+>
+<!ATTLIST seg-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Inline segments 
+-->
+<!ELEMENT seg - - (%free-text;)*>
+<!ATTLIST seg
+  %usage; 
+>
+<!-- ==================================================================
+   Cross-reference. ref will not initially be filled in.
+-->
+<!ELEMENT xr - - (%simple-text;)*>
+<!ATTLIST xr id  ID #IMPLIED
+ref NAME #IMPLIED
+pageref (y | n) "y"
+slid CDATA #IMPLIED
+sltargetid CDATA #IMPLIED
+--the value of the sltargetid attribute should match the value of the ID
+attribute on the target entry.--
+>
+<?ATTLINK xr slid "SLA">
+<!-- ref IDREF #IMPLIED -->
+<!-- ==================================================================
+   Basic character markup...
+   These may need to allow nesting within each other at some point...
+-->
+<!ELEMENT i - - (#PCDATA)>
+<!ELEMENT b - - (#PCDATA)>
+<!ELEMENT sc - - (#PCDATA)>
+<!ELEMENT sub - - (#PCDATA)>
+<!ELEMENT sup - - (#PCDATA)>
+<!-- ==================================================================
+  Left and Right braces.
+-->
+<!ELEMENT lbrace - o EMPTY>
+<!ELEMENT rbrace - o EMPTY>
+<!ATTLIST lbrace
+height CDATA #REQUIRED
+>
+<!ATTLIST rbrace
+height CDATA #REQUIRED
+>
+<!-- ==================================================================
+  General anchor element, especially for page-specific xref targets
+-->
+<!ELEMENT anchor - o EMPTY>
+<!ATTLIST anchor
+id ID #REQUIRED
+>
+<?ATTLINK anchor id "SLT">
+<!-- ==================================================================
+    Abbreviations which can be recognised can be marked with
+    abbr. Optional ref attribute for those which can be identified
+    and matched with a definition.
+-->
+<!ELEMENT abbr - - (#PCDATA)>
+<!ATTLIST abbr
+ref IDREF #IMPLIED
+>
+<!-- ==================================================================
+  Note
+-->
+<!ELEMENT note - - (%free-text; | person-name | org-entry-name | publ-name | email | internet)*> 
+<!ATTLIST note
+style (colon-after | normal) "normal"
+>
+<!-- ==================================================================
+  Source elements
+-->
+<!ELEMENT sources - - (source-head, source-info)>
+<!ELEMENT source-head - - (#PCDATA)>
+<!ELEMENT source-info - - (%simple-text; | address-block)*>
+<!-- ==================================================================
+  Address block
+-->
+<!ELEMENT address-block - - (contact?, address-note?, address*, (telephone | fax | email | internet)*)>
+<!--
+
+Stricter version for later:
+
+   <!ELEMENT address-block - - (contact?, address?, telephone?, 
+                               fax?, email?, internet?)>
+-->
+<!-- ==================================================================
+  Address block items
+-->
+<!ELEMENT contact - - (contact-name, email?)>
+<!ELEMENT contact-name - - (#PCDATA)>
+<!-- for "Published by" etc preceding the address, eg MENA Annuaire du Afrique du Nord -->  
+<!ELEMENT address-note - - (#PCDATA)>  
+<!ELEMENT address - - ((verbatim-address) | (addressline | city | state | postcode)*)>
+<!-- type attribute is to support appeals document:
+ postal = the address is adequate to use for appeals mailings, 
+          and is also to be displayed in print and online
+ location = address is inadequate for mailings, but is to be displayed
+ contact = address only to be used for appeals mailings, 
+           not for publication in any medium
+ -->
+<!ATTLIST address
+type (postal | location | contact) "postal"
+>
+<!ELEMENT verbatim-address - - (%simple-text;)*>
+<!ELEMENT addressline - - (%simple-text; | city | postcode | state)*>
+<!ELEMENT city - - (#PCDATA)>
+<!ELEMENT state - - (#PCDATA)>
+<!ELEMENT postcode - - (#PCDATA)>
+<!ELEMENT telephone - - (#PCDATA)>
+<!ATTLIST telephone
+alsofax (y | n) "n"
+>
+<!ELEMENT fax - - (#PCDATA)>
+<!ELEMENT email - - (#PCDATA)>
+<!ELEMENT internet - - (#PCDATA)>
+<!-- ==================================================================
+  Figure elements
+-->
+<!ELEMENT figure-group - - (figure, caption?)>
+<!ATTLIST figure-group %media; #REQUIRED >
+<!ELEMENT figure - o EMPTY>
+<!-- 11/05/2004 usage attribute is now deprecated; use media attribute on parent figure-group -->
+<!ATTLIST figure
+filename CDATA #REQUIRED
+usage (print | online) #IMPLIED
+>
+<!ELEMENT caption - - (%simple-text;)*>
+<!-- ==================================================================
+  Data protection
+  date in yyyy-mm-dd
+-->
+<!ELEMENT data-protection - o EMPTY>
+<!ATTLIST data-protection
+ticked-box (y | n) #REQUIRED
+date-added CDATA #REQUIRED
+>
+<!-- 3.2 Introductory survey elements -->
+<!-- ==================================================================
+   Introductory survey container for main country or territory chapters.
+-->
+<!--Note that the id-root attribute is automatically assigned by the data loading procedure to have the same
+value as the id attribute-->
+<!ELEMENT intro-survey - - (revision-list?, (country-head | territory-head), sub-head?, alt-heading*, (p | p-alternates | dir-list | org-list)*, (is-section | is-sectref)*)>
+<!ATTLIST intro-survey
+xmlns CDATA #IMPLIED
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+id-root CDATA #IMPLIED
+iso CDATA #REQUIRED
+%usage; 
+>
+<?ATTLINK intro-survey id "SLT">
+<!-- ==================================================================
+   Container for sub-country chapters.
+-->
+<!ELEMENT territory-group - - (revision-list?, name, alpha-name, sub-name?, alt-heading*, country-overview?, (territory-group-contref | territory-group-content)?, (territory-group | territory | territory-simref | territory-simple)*)>
+<!ATTLIST territory-group
+id ID #REQUIRED
+iso CDATA #REQUIRED
+id-root CDATA #IMPLIED
+region %component-list; #REQUIRED 
+%usage; 
+>
+<?ATTLINK territory-group id "SLT">
+<!-- ==================================================================
+   Container for territory-group content
+-->
+<!ELEMENT territory-group-contref - - (territory-group-content)?>
+<!ATTLIST territory-group-contref
+%slref-att;
+SLsdocty   CDATA #FIXED "territory-group-content tgc-dtd"
+tgc-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT territory-group-content - - (p | p-alternates | dir-list | org-list | gen-list)*>
+<!ATTLIST territory-group-content id ID #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "territory-group-contref"
+>
+<?ATTLINK territory-group-content id "SLT">
+<!-- ==================================================================
+   A territory that has all the components of a country
+-->
+<!ELEMENT territory - - (name, alpha-name, sub-name?, country-overview?, country-territory-content, territory-group?)>
+<!ATTLIST territory
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+iso CDATA #REQUIRED
+region %component-list; #REQUIRED 
+%usage;
+type (dependency | state) "dependency" 
+>
+<?ATTLINK territory id "SLT">
+<!-- ==================================================================
+   Country heading. Not strictly part of the introductory survey,
+   but that's where it is in the data.  
+-->
+<!ELEMENT country-head - - (%free-text;)*>
+<!-- ==================================================================
+   Territory heading.  
+-->
+<!ELEMENT territory-head - - (%free-text;)*>
+<!-- ==================================================================
+   Sub heading.  
+-->
+<!ELEMENT sub-head - - (%simple-text;)*>
+<!-- ==================================================================
+   Container for Intro-Survey Section content, added 31/1/06
+-->
+<!ELEMENT is-sectref - - (is-section)?>
+<!ATTLIST is-sectref
+%slref-att;
+SLsdocty   CDATA #FIXED "is-section is-dtd"
+is-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Intro-Survey Section. Can contain nested sections, but they must come after
+  any paragraphs.
+-->
+<!ELEMENT is-section - - (heading, alt-heading*, (p | p-alternates | article | blockquote | public-holidays | gen-list)*, (is-section | is-sectref)*)>
+<!ATTLIST is-section
+id ID #IMPLIED
+%usage; 
+sect-type CDATA #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "is-sectref"
+>
+<?ATTLINK is-section id "SLT">
+<!-- ==================================================================
+   Sub-country (very simple).
+-->
+<!ELEMENT territory-simref - - (territory-simple)?>
+<!ATTLIST territory-simref
+%slref-att;
+SLsdocty   CDATA #FIXED "territory-simple ts-dtd"
+ts-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT territory-simple - - (revision-list?, name, alpha-name, alt-heading*, sources?, figure-group?, country-overview?, (p | p-alternates | dir-list | org-list | gen-list | p-group)*, territory-section*)>
+<!ATTLIST territory-simple
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+xmlns CDATA #IMPLIED
+%usage; 
+%slcall-att;
+SLsdocrf NAME #FIXED "territory-simref"
+>
+<?ATTLINK territory-simple id "SLT">
+<!-- ==================================================================
+   Section of a simple sub-country.  
+-->
+<!ELEMENT territory-section - - (revision-list?, heading, alt-heading*, heading-note?, (p | p-alternates | article | dir-list | org-list | gen-list | table-block | table-block-simple)*, territory-section*)>
+<!ATTLIST territory-section
+id ID #IMPLIED
+>
+<?ATTLINK territory-section id "SLT">
+<!-- ==================================================================
+  Public holidays
+-->
+<!ELEMENT public-holidays - - ((holiday-year | p)+, (endnote | note)*)>
+<!-- ==================================================================
+  Holiday year
+-->
+<!ELEMENT holiday-year - - (year, ((holiday)+ | note))>
+<!-- ==================================================================
+  Date
+  value attribute gives the value of the date in some standard form, 
+        usually yyyy-mm-dd (ISO 8601)
+-->
+<!ELEMENT date - - (#PCDATA | endnoteref)*>
+<!ATTLIST date
+value CDATA #IMPLIED
+>
+<!-- ==================================================================
+  Year
+-->
+<!ELEMENT year - - (%free-text;)*>
+<!-- ==================================================================
+  Holiday 
+-->
+<!ELEMENT holiday - - ((date, endnoteref?), (holiday-name, endnoteref*)+)>
+<!-- ==================================================================
+  Holiday name
+-->
+<!ELEMENT holiday-name - - (%free-text;)*>
+<!-- ==================================================================
+  Revision list
+-->
+<!ELEMENT revision-list - - (last-revision?, last-reply?, revision*)>
+<!ATTLIST revision-list rts	CDATA	#IMPLIED 
+>
+<!-- ==================================================================
+  Last revision (to support SigmaLink)
+-->
+<!ELEMENT last-revision - - (#PCDATA)>
+<!ATTLIST last-revision
+%revision-att; 
+>
+<!-- ==================================================================
+  Last reply (to support SigmaLink)
+-->
+<!ELEMENT last-reply - - (#PCDATA)>
+<!ATTLIST last-reply
+revision-date CDATA #REQUIRED 
+>
+<!-- ==================================================================
+  Revision
+-->
+<!ELEMENT revision - - (#PCDATA)>
+<!ATTLIST revision
+%revision-att; 
+>
+<!-- 3.3 Statistical survey elements -->
+<!-- ==================================================================
+  Alternate stats surveys
+-->
+<!ELEMENT stats-survey-alternates - - (stats-survey)+>
+<!ATTLIST stats-survey-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+   Stats-Survey container.
+-->
+<!ELEMENT stats-survey - - (ss-section | ss-sectref | ss-section-alternates)*>
+<!ATTLIST stats-survey
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+iso CDATA #REQUIRED
+id-root CDATA #IMPLIED
+xmlns CDATA #IMPLIED
+type (run-on-stats | normal) "normal"
+%print-style; "pgwidth"
+%usage;
+>
+<?ATTLINK stats-survey id "SLT">
+<!-- ==================================================================
+  Alternates Stats-Survey Sections
+-->
+<!ELEMENT ss-section-alternates - - (ss-section)+>
+<!ATTLIST ss-section-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Stats-Survey Section. Can contain nested sections, but they must come after
+  any content.
+
+  sect-type for future expansion, example content: newspapers, 
+  finance (to be finalised)
+-->
+
+<!ELEMENT ss-sectref - - (ss-section)?>
+<!ATTLIST ss-sectref
+%slref-att;
+SLsdocty   CDATA #FIXED "ss-section ss-dtd"
+ss-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT ss-section - - (revision-list?, heading, alt-heading*, (heading-note | p | p-alternates | ss-list | endnote | note | sources)*, (ss-section | ss-section-alternates)*)>
+<!ATTLIST ss-section
+id ID #REQUIRED
+%usage; 
+%stats-sections; #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "ss-sectref"
+>
+<?ATTLINK ss-section id "SLT">
+<!ELEMENT ss-list - - ((ss-entry-table | ss-entry-tabref | ss-entry-simple)+, endnote*)>
+<!ELEMENT ss-entry-table - - (revision-list?, ss-entry-head?, (table-block-simple | ss-entry-table | ss-entry-simple | endnote | sources | note)*)>
+<!ATTLIST ss-entry-table id ID #IMPLIED
+%usage;
+%slcall-att;
+SLsdocrf NAME #FIXED "ss-entry-tabref"
+>
+<?ATTLINK ss-entry-table id "SLT">
+<!ELEMENT ss-entry-tabref - - (ss-entry-table)?>
+<!ATTLIST ss-entry-tabref
+%slref-att;
+SLsdocty   CDATA #FIXED "ss-entry-table ss-entry-tabrefdtd"
+ss-entry-tabrefdtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT ss-entry-simple - - (revision-list?, ss-entry-head, (ss-entry-data | gen-list | p | ss-entry-data-structured | endnote | sources | note | ss-entry-simple)*)>
+<!ATTLIST ss-entry-simple
+id ID #REQUIRED
+>
+<?ATTLINK ss-entry-simple id "SLT">
+<!ELEMENT ss-data-note - - (%free-text;)*>
+<!ELEMENT ss-entry-head - - (ss-entry-name?, (ss-data-note | endnoteref)*)>
+<!ELEMENT ss-entry-name - - (#PCDATA)>
+<!ELEMENT ss-entry-data - - (%free-text;)*>
+<!ELEMENT ss-entry-data-structured - - (ss-entry-data-group)+>
+<!ELEMENT ss-entry-data-group - - (ss-entry-data-group-head?, (ss-data-label, ss-data-num)+)>
+<!ELEMENT ss-entry-data-group-head - - (%simple-text;)*>
+<!ELEMENT ss-data-label - - (%free-text;)*>
+<!ELEMENT ss-data-num - - (#PCDATA)>
+<!-- 3.4 Directory elements -->
+<!-- ==================================================================
+  Alternate directories 
+-->
+<!ELEMENT directory-alternates - - (directory)+>
+<!ATTLIST directory-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+   Directory container.
+-->
+<!ELEMENT directory - - (alt-heading*, (dir-section | dir-section-alternates)+, (bibl-section | bibl-ref)?)>
+<!ATTLIST directory
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+iso CDATA #REQUIRED
+xmlns CDATA #IMPLIED 
+id-root CDATA #REQUIRED
+%usage; 
+name-markup-type (standard | hispanic) "standard"
+%print-style; "pgwidth"
+>
+<?ATTLINK directory id "SLT">
+<!-- ==================================================================
+  Alternate directory sections
+-->
+<!ELEMENT dir-section-alternates - - (dir-section)+>
+<!ATTLIST dir-section-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+   Sigmalink container for Directory section.
+-->
+<!ELEMENT dir-sectref - - (dir-section)?>
+<!ATTLIST dir-sectref
+%slref-att;
+SLsdocty   CDATA #FIXED "dir-section dir-sectiondtd"
+dir-sectiondtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Directory section. Can contain nested sections, but they must come 
+  after any content.
+
+  sect-type for future expansion, example content: newspapers, 
+  finance (to be finalised)
+-->
+<!ELEMENT dir-section - - (revision-list?, heading, included-file?, heading-trans?, alt-heading*, heading-note?, (p | p-alternates | p-group | article | legal-block | blockquote | gen-list | dir-list | org-list | table-block | table-blockref | table-block-simple)*, (dir-section | dir-section-alternates | dir-sectref | org-entry-expanded | org-expandref | endnote)*)>
+<!ATTLIST dir-section id ID #IMPLIED
+%usage; 
+sect-type (constitution | government | legislature | advisory | local-government | political-orgs | diplomatic | judicial | religion | press | publishers | broadcasting-comms | finance | trade-industry | transport | tourism | culture | education | social-welfare | environment | defence) #IMPLIED
+sect-type2 CDATA #IMPLIED
+country-id CDATA #IMPLIED 
+%slcall-att;
+SLsdocrf NAME #FIXED "dir-sectref"
+>
+<?ATTLINK dir-section id "SLT">
+<!-- ==================================================================
+  General purpose list in a directory.
+-->
+<!ELEMENT dir-list - - (revision-list?, ( dir-entry | dir-entry-alternates | dir-entryref | dir-entry-simple)+, endnote*)>
+<!-- ==================================================================
+   Sigmalink container for an item in a general purpose list.
+-->
+<!ELEMENT dir-entryref - - (dir-entry)?>
+<!ATTLIST dir-entryref
+%slref-att;
+SLsdocty   CDATA #FIXED "dir-entry dir-entrydtd"
+dir-entrydtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Directory list of organisations.
+-->
+<!ELEMENT org-list - - (org-list-head?, (org-entry | org-entry-alternates | org-entryref | org-entry-simple | org-entry-expanded | org-expandref)*, endnote*)>
+<!-- ==================================================================
+  Sigmalink container for entries in a list of organisations.
+-->
+<!ELEMENT org-entryref - - (org-entry)?>
+<!ATTLIST org-entryref
+%slref-att;
+SLsdocty   CDATA #FIXED "org-entry org-entrydtd"
+org-entrydtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Sigmalink container for entries in a list of organisations.
+-->
+<!ELEMENT org-expandref - - (org-entry-expanded)?>
+<!ATTLIST org-expandref
+%slref-att;
+SLsdocty   CDATA #FIXED "org-entry-expanded org-expanddtd"
+org-expanddtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Heading of an org-list
+-->
+<!ELEMENT org-list-head - - (#PCDATA)>
+<!-- ==================================================================
+  dir entry alternates
+-->
+<!ELEMENT dir-entry-alternates - - (dir-entry)+>
+<!ATTLIST dir-entry-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Item in a general purpose list
+-->
+<!ELEMENT dir-entry - - (revision-list?, data-protection?, ((dir-list | dir-entry-name)*, info-note?, (person-group?, (note | address-block)*)+))>
+<!ATTLIST dir-entry id ID #IMPLIED
+%usage;
+%slcall-att;
+SLsdocrf NAME #FIXED "dir-entryref"
+>
+<?ATTLINK dir-entry id "SLT">
+<!-- ==================================================================
+  Simple item in a general purpose list
+-->
+<!ELEMENT dir-entry-simple - - (revision-list?, data-protection?, (dir-list | (dir-entry-name, info-note?, (note | table-block | table-blockref | table-block-simple)*)))>
+<!ATTLIST dir-entry-simple
+id ID #IMPLIED
+>
+<?ATTLINK dir-entry-simple id "SLT">
+<!-- ==================================================================
+  Note following a dir-name
+-->
+<!ELEMENT info-note - - (%simple-text;)*>
+<!-- ==================================================================
+  Item name in a general purpose list
+-->
+<!ELEMENT dir-entry-name - - (%free-text;)*>
+<!-- ==================================================================
+  Article: an article, non-indented para in the constitution section, 
+           with preceding leading
+-->
+<!ELEMENT article - - (%simple-text;)*>
+<!ATTLIST article
+id ID #IMPLIED
+>
+<?ATTLINK article id "SLT">
+<!-- ==================================================================
+  Legal block
+-->
+<!ELEMENT legal-block - - (heading?, (p | p-alternates | gen-list)*, legal-block*)>
+<!ATTLIST legal-block
+  id ID #IMPLIED
+>
+<!-- ==================================================================
+  Blockquote
+-->
+<!ELEMENT blockquote - - (%free-text;)*>
+<!-- ==================================================================
+  Person
+-->
+<!ELEMENT person - - ((person-name | vacancy), (note | person-note | address-block)*)>
+<!-- ==================================================================
+  Person Group
+-->
+<!ELEMENT person-group - - (person)+>
+<!-- ==================================================================
+  Role Group
+-->
+<!ELEMENT role-group - - (role, (person)+)>
+
+<!-- ==================================================================
+  Person name
+-->
+<!ELEMENT person-name - - ( ((surname | roleName | title | forename | pseudonym | gen-name | regnal)+) | verbatim-name)+>
+<!ATTLIST person-name
+  idref IDREF #IMPLIED
+>
+<!-- ==================================================================
+  Verbatim name
+-->
+<!ELEMENT verbatim-name - - (#PCDATA)>
+<!-- ==================================================================
+  Name components
+-->
+<!ELEMENT title - - (#PCDATA)>
+<!ELEMENT forename - - (#PCDATA)>
+<!ELEMENT surname - - (#PCDATA)>
+<!ELEMENT gen-name - - (#PCDATA)>
+<!ELEMENT regnal - - (#PCDATA)>
+<!ELEMENT roleName - - (#PCDATA)>
+<!-- ==================================================================
+  Vacant position
+-->
+<!ELEMENT vacancy - o EMPTY>
+<!-- ==================================================================
+  Person Note
+-->
+<!ELEMENT person-note - - (%simple-text; | person-name)*>
+
+<!-- ==================================================================
+  Person role
+-->
+<!ELEMENT role - - (%simple-text;)*>
+<!-- ==================================================================
+  Alternate organisation
+-->
+<!ELEMENT org-entry-alternates - - (org-entry)+>
+<!ATTLIST org-entry-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Directory entries for an organisation
+-->
+<!ELEMENT org-entry - - (revision-list?, data-protection?, org-entry-head, address-block*, (found-date | note | role-group | stats | ownership | frequency)*, (dir-list | org-list)?)>
+<!--
+
+Stricter version for later:
+
+    <!ELEMENT org-entry - - (org-entry-head, address-block?, 
+                            ((found-date, note*) | (note+, 
+                            (found-date, note*)?) )?, role-group*, 
+                            stats*, (dir-list | org-list)?)>
+-->
+<!ATTLIST org-entry id ID #IMPLIED
+%usage;
+region %component-list; #IMPLIED
+country-id CDATA #IMPLIED
+%media; "printandonline"
+print-only (yes | no) "no"
+%slcall-att;
+SLsdocrf NAME #FIXED "org-entryref"
+>
+<?ATTLINK org-entry id "SLT">
+<!ELEMENT org-entry-expanded - - (revision-list?, data-protection?, org-entry-head, address-block?, found-date?, (note | p | p-alternates | p-group | dir-list | table-block | table-blockref | org-list | stats | ownership | frequency | role-group)*)>
+<!ATTLIST org-entry-expanded id ID #IMPLIED
+%usage;
+region %component-list; #IMPLIED
+country-id CDATA #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "org-expandref"
+>
+<?ATTLINK org-entry-expanded id "SLT">
+<!-- ==================================================================
+  Entry heading
+-->
+<!ELEMENT org-entry-head - - (endnoteref?, org-entry-name, (abbr | alt-name | note | org-entry-name | gen-text)*)>
+<!-- ==================================================================
+  Directory entry (unstructured)
+-->
+<!ELEMENT org-entry-simple - - (#PCDATA | org-entry-name | person | note | revision-list | data-protection)*>
+<!ATTLIST org-entry-simple
+id ID #IMPLIED
+>
+<?ATTLINK org-entry-simple id "SLT">
+<!-- ==================================================================
+  General Roman text in a org-entry-head
+-->
+<!ELEMENT gen-text - - (#PCDATA)>
+<!-- ==================================================================
+  Entry name
+-->
+<!ELEMENT org-entry-name - - (%simple-text;| publ-name)*>
+<!-- ==================================================================
+  Alternative name
+-->
+<!ELEMENT alt-name - - (#PCDATA | publ-name)*>
+<!-- ==================================================================
+  Foundation date
+-->
+<!ELEMENT found-date - - (%free-text;)*>
+<!-- ==================================================================
+  Ownership of an insitution represented by an org-entry
+-->
+<!ELEMENT ownership - -  (%simple-text;)*>
+<!-- ==================================================================
+  Frequency of a peridical represented by an org-entry
+-->
+<!ELEMENT frequency - -  (%simple-text;)*>
+<!-- ==================================================================
+  Statistics within an org-entry
+-->
+<!ELEMENT stats - - (%simple-text;)*>
+<!-- ==================================================================
+  Included file
+-->
+<!ELEMENT included-file - o EMPTY>
+<!ATTLIST included-file
+filename CDATA #REQUIRED
+>
+<!-- 3.5 Bibliography elements -->
+<!-- ==================================================================
+   Sigmalink container for Bibliography section.
+-->
+<!ELEMENT bibl-ref - - (bibl-section)?>
+<!ATTLIST bibl-ref
+%slref-att;
+SLsdocty   CDATA #FIXED "bibl-section bibl-dtd"
+bibl-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  Bibliography
+-->
+<!ELEMENT bibl-section - - (heading, alt-heading*, heading-note?, p*, bibl-list?, bibl-section*)>
+<!ATTLIST bibl-section id ID #REQUIRED
+%usage; 
+%slcall-att;
+SLsdocrf NAME #FIXED "bibl-ref"
+>
+<?ATTLINK bibl-section id "SLT">
+<!-- ==================================================================
+  Bibliographical list
+-->
+<!ELEMENT bibl-list - - (((bibl-entry)+ | (bibl-entry-expanded)+), p*)>
+<!-- ==================================================================
+  Simple bibliographical item
+-->
+<!ELEMENT bibl-entry - - (%simple-text; | internet)*>
+<!ATTLIST bibl-entry
+type (full | implied-author) "full"
+id ID #IMPLIED
+>
+<?ATTLINK bibl-entry id "SLT">
+<!-- ==================================================================
+  Marked-up bibliographical item
+  This markup will not be used in the conversion and enrichment phase; it is provided for future Europa use.
+-->
+<!ELEMENT bibl-entry-expanded - - (#PCDATA | author | article-title | vol-title | imprint | internet)*>
+<!ATTLIST bibl-entry-expanded
+type (full | implied-author) "full"
+id ID #IMPLIED
+>
+<?ATTLINK bibl-entry-expanded id "SLT">
+<!-- ==================================================================
+  Author name
+-->
+<!ELEMENT author - - (#PCDATA)>
+<!-- ==================================================================
+  Title of article in periodical (in single quotes in print)
+-->
+<!ELEMENT article-title - - (#PCDATA)>
+<!-- ==================================================================
+  Title of book or journal
+-->
+<!ELEMENT vol-title - - (#PCDATA)>
+<!-- ==================================================================
+  imprint, including place of publication, publisher, date, pp ref etc
+-->
+<!ELEMENT imprint - - (#PCDATA)>
+<!-- ==================================================================
+  4 Regional
+-->
+<!-- ==================================================================
+  4.1 Country Surveys and Essays
+-->
+<!-- ==================================================================
+  Regional Overview
+-->
+<!ELEMENT region-overview - - (p*, gen-section*)>
+<!ATTLIST region-overview
+  id ID #REQUIRED
+  iso CDATA #REQUIRED
+  %usage;
+  %media; "online"
+>
+<!-- ==================================================================
+  Country Overview
+-->
+<!ELEMENT country-overview - - (p*, capital*, language-group?, gen-section+)>
+<!ATTLIST country-overview
+id ID #REQUIRED
+iso CDATA #REQUIRED
+%usage; 
+%media; "online"
+>
+<?ATTLINK country-overview id "SLT">
+<!-- ==================================================================
+  Capital
+-->
+<!ELEMENT capital - - (#PCDATA)>
+<!ATTLIST capital
+type CDATA #IMPLIED
+>
+<!-- ==================================================================
+  Language Group
+-->
+<!ELEMENT language-group - - (language+)>
+<!-- ==================================================================
+  Language
+-->
+<!ELEMENT language - - (#PCDATA)>
+<!-- ==================================================================
+  Country Survey
+-->
+<!ELEMENT country-survey - - (revision-list?, (country-head | territory-head)?, sub-head?, author-group?, heading, alt-heading*, author-group?, (p | p-alternates | p-group | gen-list | blockquote | chron-list)*, (gen-section | gen-section-alternates)*)>
+<!ATTLIST country-survey
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+iso CDATA #REQUIRED
+id-root CDATA #IMPLIED
+xmlns CDATA #IMPLIED
+%usage; 
+sect-type (history | geography | chronology | economy | usac) #IMPLIED
+%print-style; "pgwidth"
+>
+<?ATTLINK country-survey id "SLT">
+<!-- ==================================================================
+  Author Group
+-->
+<!ELEMENT author-group - - (primary-authors?, other-authors*, footnote?)>
+<!-- would be nice to link to the affiliations -->
+<!ELEMENT primary-authors - - (%free-text; | person-name)*>
+<!ELEMENT other-authors - - (%free-text; | person-name)*>
+<!-- ==================================================================
+  Chronological List
+-->
+<!ELEMENT chron-list - - (chron-entry)+>
+<!-- ==================================================================
+  Chronological Entry
+-->
+<!ELEMENT chron-entry - - (chron-head, chron-text+)>
+<!--in ISO form yyyy-mm-dd
+"19th century": from-date="1800-00-00" to-date="1900-00-00"
+"1st century BC": from-date="-0100-00-00" to-date="0000-00-00" -->
+<!ATTLIST chron-entry
+date CDATA #IMPLIED
+from-date CDATA #IMPLIED
+to-date CDATA #IMPLIED
+>
+<!ELEMENT chron-head - - (%simple-text;)*>
+<!ELEMENT chron-text - - (%free-text;| person-name)*> 
+<!-- ==================================================================
+  Alternate General Sections
+-->
+<!ELEMENT gen-section-alternates - - (gen-section)+>
+<!ATTLIST gen-section-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  General Section wrapper, as appears in Essays, Country Surveys etc
+-->
+<!ELEMENT gen-sectref - - (gen-section)?>
+<!ATTLIST gen-sectref
+%slref-att;
+SLsdocty   CDATA #FIXED "gen-section gen-dtd"
+gen-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+  General Section, as appears in Essays, Country Surveys etc
+-->
+<!ELEMENT gen-section - - (heading, heading-note*, author-group?, (p | p-alternates | p-group | gen-list | blockquote | article | legal-block | endnote | chron-list | figure-group | table-block | table-block-simple | contributor-list | essay-group)*, (gen-sectref | gen-section | gen-section-alternates)*)>
+<!ATTLIST gen-section
+id ID #IMPLIED
+%usage; 
+sect-type CDATA #IMPLIED
+%print-style; "column" 
+%slcall-att;
+SLsdocrf NAME #FIXED "gen-sectref"
+>
+<?ATTLINK gen-section id "SLT">
+<!-- ==================================================================
+  Essay
+-->
+<!ELEMENT essay-ref - - (essay)?>
+<!ATTLIST essay-ref
+%slref-att;
+SLsdocty   CDATA #FIXED "essay essay-dtd"
+essay-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT essay - - (revision-list?, heading, alt-heading*, author-group?, (p | p-alternates | p-group | blockquote | article | gen-list | figure-group | table-block | table-block-simple | chron-list)*, (gen-section | gen-section-alternates)*, bibl-section?)>
+<!ATTLIST essay
+original-filename CDATA #IMPLIED
+id ID #REQUIRED
+region %component-list; #IMPLIED
+xmlns CDATA #IMPLIED
+%usage; 
+%slcall-att;
+SLsdocrf NAME #FIXED "essay-ref"
+>
+<?ATTLINK essay id "SLT">
+<!-- ==================================================================
+  Calendars, Time Reckoning, and Weights and Measures
+-->
+<!ELEMENT weights-and-measures - - (heading, alt-heading*, gen-section+)>
+<!ATTLIST weights-and-measures
+id ID #IMPLIED
+id-root CDATA #IMPLIED
+%usage; 
+>
+<?ATTLINK weights-and-measures id "SLT">
+<!-- ==================================================================
+  Periodicals
+-->
+<!ELEMENT periodicals - - (heading, alt-heading*, org-list, dir-section*)>
+<!ATTLIST periodicals
+id ID #IMPLIED
+id-root CDATA #IMPLIED
+%usage; 
+>
+<?ATTLINK periodicals id "SLT">
+<!-- ==================================================================
+  5 International Organisations
+-->
+<!-- ==================================================================
+  Container for international organisations
+-->
+<!ELEMENT int-org-group - - (heading?, alt-heading*, int-org-contents?, heading-note?, ((int-org-entry|int-org-entryref)+ | (int-org-section | int-org-section-alternates | int-org-sectref)+ | table-block-simple), int-org-group*)>
+<!ATTLIST int-org-group
+id ID #IMPLIED
+original-filename CDATA #IMPLIED
+iso CDATA #IMPLIED
+related-file CDATA #IMPLIED
+xmlns CDATA #IMPLIED
+%usage; 
+sect-type (un | major | other) #IMPLIED 
+id-root    CDATA #IMPLIED
+>
+<?ATTLINK int-org-group id "SLT">
+<!-- ==================================================================
+Alternate International Organisations
+ -->
+<!ELEMENT int-org-entry-alternates - - (int-org-entry)+>
+<!ATTLIST int-org-entry-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+  Sigmalink container for entries in a list of International organisations.
+-->
+<!ELEMENT int-org-entryref - - (int-org-entry)?>
+<!ATTLIST int-org-entryref
+%slref-att;
+SLsdocty   CDATA #FIXED "int-org-entry int-org-entrydtd"
+int-org-entrydtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+A regular International Organisation
+ -->
+<!ELEMENT int-org-entry - - (revision-list?, data-protection?, int-org-entry-head, alt-heading*, (int-org-block | int-org-block-alternates)?, (int-org-entry | int-org-entry-alternates | int-org-entryref | int-org-entry-simple | int-org-entry-simpleref | int-org-section | int-org-section-alternates | int-org-sectref)*)>
+<!ATTLIST int-org-entry
+id ID #IMPLIED
+original-filename CDATA #IMPLIED
+source CDATA #IMPLIED 
+related-file CDATA #IMPLIED  
+xmlns CDATA #IMPLIED
+%usage; 
+region %component-list; #IMPLIED
+%print-style; "pgwidth"
+%slcall-att;
+SLsdocrf NAME #FIXED "int-org-entryref"
+>
+<?ATTLINK int-org-entry id "SLT">
+<!ELEMENT int-org-entry-simpleref - - (int-org-entry-simple)?>
+<!ATTLIST int-org-entry-simpleref
+%slref-att;
+SLsdocty   CDATA #FIXED "int-org-entry-simple int-org-entry-simplerefdtd"
+int-org-entry-simplerefdtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+A simple International Organisation
+ -->
+<!ELEMENT int-org-entry-simple - - (revision-list?, data-protection?, int-org-entry-head, address-block?, (p | p-alternates | p-group | dir-list)*)>
+<!ATTLIST int-org-entry-simple
+id ID #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "int-org-entry-simpleref"
+>
+<?ATTLINK int-org-entry-simple id "SLT">
+<!-- ==================================================================
+An International Organisation heading
+ -->
+<!ELEMENT int-org-entry-head - - (endnoteref?, int-org-name-group+)>
+<!-- ==================================================================
+An alternate International Organisation initial block
+ -->
+<!ELEMENT int-org-block-alternates - - (int-org-block)+>
+<!ATTLIST int-org-block-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+An International Organisation entry name group
+ -->
+<!ELEMENT int-org-name-group - - (org-entry-name, abbr?, footnote?)>
+<!ATTLIST int-org-name-group
+type (main | alt) "main"
+>
+<!-- ==================================================================
+An International Organisation initial block
+ -->
+<!ELEMENT int-org-block - - (address-block*, (p | p-alternates | p-group | dir-list | org-list)*, (int-org-section | int-org-section-alternates)*)>
+<!ATTLIST int-org-block  
+%usage;  
+>  
+<!-- ==================================================================
+International Organisation section alternates
+ -->
+<!ELEMENT int-org-section-alternates - - (int-org-section)+>
+<!ATTLIST int-org-section-alternates
+  %alternates-attributes; 
+>
+<!-- ==================================================================
+An International Organisation section
+ -->
+<!ELEMENT int-org-section - - (heading, heading-trans?, alt-heading*, heading-note?, (p | p-alternates | p-group | article | legal-block | gen-list | dir-list | org-list | chron-list | publ-list | table-block | table-block-simple | endnote)*, (int-org-section | int-org-section-alternates | int-org-entry-simple | int-org-entry | int-org-entry-alternates)*)>
+<!ATTLIST int-org-section
+id ID #REQUIRED
+%usage; 
+sect-type CDATA #IMPLIED
+%slcall-att;
+SLsdocrf NAME #FIXED "int-org-sectref"
+>
+<?ATTLINK int-org-section id "SLT">
+<!ELEMENT int-org-sectref - - (int-org-section)?>
+<!ATTLIST int-org-sectref
+%slref-att;
+SLsdocty   CDATA #FIXED "int-org-section int-org-sectrefdtd"
+int-org-sectrefdtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!-- ==================================================================
+A Publications list
+ -->
+<!ELEMENT publ-list - - (publ-entry | p)+>
+<!-- ==================================================================
+A Publications entry
+ -->
+<!ELEMENT publ-entry - - (publ-name, note?)>
+<!-- ==================================================================
+A Publication name
+ -->
+<!ELEMENT publ-name - - (%simple-text;)*>
+<!-- ==================================================================
+Contents list in Int Org
+ -->
+<!ELEMENT int-org-contents - - (p | table-block-simple)*>
+<!-- ==================================================================
+  6 Political Profiles
+-->
+<!-- ==================================================================
+  person-entry
+-->
+<!ELEMENT person-entry - - (revision-list?, data-protection?, (person-entry-name | person-name), qualifications?, ((nationality?, profession*, presentposition?, nameatbirth?, dateofbirth?, placeofbirth?, dateofdeath?, parentage?, ethnicity?, extendedfamily?, immediatefamily?, education?, careerpara?, honoursawards?, (gen-section | publications)*, address-block*) | (xr)))> 
+<!ATTLIST person-entry
+dead (0 | 1) "0"
+gender (M | F | U) #REQUIRED
+id ID #IMPLIED
+iww-id CDATA #IMPLIED
+sortkey CDATA #IMPLIED
+country-id CDATA #REQUIRED
+%usage; 
+>
+<!-- ==================================================================
+  Person entry name
+-->
+<!ELEMENT person-entry-name - - (surname, title?, forename?, pseudonym?)>
+<!-- ==================================================================
+  Qualifications
+-->
+<!ELEMENT qualifications - - (%simple-text;)*>
+<!-- ==================================================================
+  Nationality
+-->
+<!ELEMENT nationality - - (%simple-text;)*>
+<!-- ==================================================================
+  Profession
+-->
+<!ELEMENT profession - - (%simple-text;)*>
+<!-- ==================================================================
+  Present Position
+-->
+<!ELEMENT presentposition - - (%simple-text;)*>
+<!-- ==================================================================
+  Name at birth
+-->
+<!ELEMENT nameatbirth - - (%simple-text;)*>
+<!-- ==================================================================
+  Date of Birth
+-->
+<!--
+birthyear 1964
+birthmonth 06
+birthday 24
+-->
+<!ELEMENT dateofbirth - - (%simple-text;)*>
+<!ATTLIST dateofbirth
+birthyear CDATA #IMPLIED
+birthmonth CDATA #IMPLIED
+birthday CDATA #IMPLIED
+>
+<!-- ==================================================================
+  Place of Birth
+-->
+<!ELEMENT placeofbirth - - (%simple-text;)*>
+<!-- ==================================================================
+  Date of Death
+-->
+<!ELEMENT dateofdeath - - (%simple-text;)*>
+<!ATTLIST dateofdeath
+deathyear CDATA #IMPLIED
+deathmonth CDATA #IMPLIED
+deathday CDATA #IMPLIED
+>
+<!-- ==================================================================
+  Ethnicity
+-->
+<!ELEMENT ethnicity - - (%simple-text;)*>
+<!-- ==================================================================
+  Parentage
+-->
+<!ELEMENT parentage - - (%simple-text;)*>
+<!-- ==================================================================
+  Extended Family
+-->
+<!ELEMENT extendedfamily - - (%simple-text;)*>
+<!-- ==================================================================
+  Immediate Family
+-->
+<!ELEMENT immediatefamily - - (%simple-text;)*>
+<!-- ==================================================================
+  Education
+-->
+<!ELEMENT education - - (%simple-text;)*>
+<!-- ==================================================================
+  Career
+-->
+<!ELEMENT careerpara - - (%free-text;)*>
+<!-- ==================================================================
+  Honours and Awards
+-->
+<!ELEMENT honoursawards - - (%simple-text;)*>
+<!-- ==================================================================
+  Publications (in the EDIO political profiles section)
+-->
+<!ELEMENT publications - - ((heading | publ-head), p)>
+<!-- ==================================================================
+  Publications heading
+-->
+<!ELEMENT publ-head - - (#PCDATA)>
+<!-- ==================================================================
+  Pseudonym
+-->
+<!ELEMENT pseudonym - - (%simple-text;)*>
+<!-- ==================================================================
+  7 Contributors
+-->
+<!-- ==================================================================
+  contributor-list
+-->
+<!ELEMENT contributor-list - - (contributor)+>
+<!-- ==================================================================
+  contributor
+-->
+<!ELEMENT contributor - - (person-name, careerpara)>
+<!ATTLIST contributor
+  id ID #REQUIRED
+>
+<!-- ==================================================================
+  7 Comparative Statistics
+-->
+<!ELEMENT comp-stats - - (stats-tabref | stats-table)+>
+
+<!ELEMENT stats-tabref - - (stats-table)?>
+<!ATTLIST stats-tabref
+%slref-att;
+SLsdocty   CDATA #FIXED "stats-table st-dtd"
+st-dtd CDATA #FIXED "-//Semantico//DTD SGML EWYB document 1.0//EN"
+>
+<!ELEMENT stats-table - - (heading, units?, sources?, note?, special-data-group?, country-stats-group)>
+<!ATTLIST stats-table
+  %stats-sections; #REQUIRED
+id ID #IMPLIED
+%usage; 
+%slcall-att;
+SLsdocrf NAME #FIXED "stats-tabref"
+>
+<?ATTLINK stats-table id "SLT">
+<!ELEMENT units - - (%simple-text;)*>
+<!ELEMENT special-data-group - - (name, data-group+)>
+<!ATTLIST special-data-group
+  country-scale (country-scale) #IMPLIED
+>
+<!ELEMENT country-stats-group - - (country-stats+)>
+<!ELEMENT country-stats - - (name, footnote?, data-group+)>
+<!ATTLIST country-stats
+  iso CDATA #REQUIRED
+>
+<!ELEMENT data-group - - (value+)>
+<!ATTLIST data-group
+  year NMTOKEN #IMPLIED
+  label CDATA #IMPLIED
+>
+<!ELEMENT value - - (#PCDATA | not-avail)*>
+<!ATTLIST value
+  year NMTOKEN #IMPLIED
+  label CDATA #IMPLIED
+>
+<!ELEMENT not-avail - o EMPTY>

@@ -6,5 +6,6 @@
     </meta>
     <projectTree name="oxygendemo.xpr">
         <folder path="."/>
+        <file name="country.ditamap"/>
     </projectTree>
 </project>
