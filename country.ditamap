@@ -4,7 +4,6 @@
     <title>Country</title>
     <topicref href="DITATopicSexample_hierarchy.dita">
         <topicref href="DITATopicSon_windows.dita"/>
-        <topicref href="DITATopicSon_windows.dita"/>
         <topicref href="DITATopicSconversion.dita">
             <topicref href="DITATopicSto_pdf.dita"/>
             <topicref href="DITATopicSto_html.dita"/>
