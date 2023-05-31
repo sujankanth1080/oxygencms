@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT dod (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+
+<!ELEMENT country (section*)>
+
+<!ELEMENT section (title*, subsection*, para*, note*)>
+
+<!ELEMENT subsection (department*, title*, para*, institute*, note*)>
+
+<!ELEMENT department (subdepartment*, institute*, title*, para*, note*)>
+
+<!ELEMENT subdepartment (institute, title, para, note)>
+
+<!ELEMENT institute (stafftype, title, para, note, address, telephone, website, noofteachers, noofstudents)>
+
+<!ELEMENT stafftype (staff, title)>
+
+<!ELEMENT staff (firstname, lastname, surname, sex, dob, dod, email, address, telephone)>
+
+
+
+
+
+
+
+
+
+
+
