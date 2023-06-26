@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="table1demo">
+    <title>Table1demo</title>
+    <body>
+        <table frame="all" rowsep="1" colsep="1" id="table_qv1_fqx_5xb">
+            <title>Table1Demo</title>
+            <tgroup cols="4" align="right">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="newCol3" colnum="3"/>
+                <colspec colname="c3" colnum="4"/>
+                <thead>
+                    <row>
+                        <entry namest="c1" nameend="newCol3"/>
+                        <entry/>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry/>
+                        <entry/>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry/>
+                        <entry namest="c2" nameend="newCol3"/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry/>
+                        <entry namest="c2" nameend="newCol3"/>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p/>
+    </body>
+</topic>

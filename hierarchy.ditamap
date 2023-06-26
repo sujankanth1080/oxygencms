@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE country SYSTEM "country.dtd">
-<country>
+<country xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="country.dita">
     <section>
     <subsection/><subsection><department/></subsection></section>
 </country>

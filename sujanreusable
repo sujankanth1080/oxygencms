@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Description:this is sample reusable comp-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ReusableComponent_khj_cyx_5xb">
+    <title/>
+    <body>
+        <table frame="all" rowsep="1" colsep="1" id="table_xxk_kxx_5xb">
+            <title>TableDemo</title>
+            <tgroup cols="3" align="right">
+                <colspec colname="c1" colnum="1"/>
+                <colspec colname="c2" colnum="2"/>
+                <colspec colname="c3" colnum="3"/>
+                <thead>
+                    <row>
+                        <entry>Population</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>100</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>200</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>300</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>
