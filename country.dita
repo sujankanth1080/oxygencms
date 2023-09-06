@@ -1,4 +1,7 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CHAPTER SYSTEM "CountryF1.dtd" >
+<?xml-stylesheet type="text/css" href="country.css"?>
+
 <CHAPTER ID="CA">
   <TITLE>Canada</TITLE>
   <INTRO>
@@ -67,247 +70,224 @@
   </INTRO>
   <RRB-GRP ID="CA.0">
     <TITLE>Regulatory and Representative Bodies</TITLE>
-    <SUB-LS-RI><SUB-LS-RI ID="CA.0.1">
-      <SUB-LS-RI-TITLE>Government</SUB-LS-RI-TITLE>
-      <SECONDARY ID="CA.201804171742.0001" TOWN="Edmonton" INDEX="Y" PREVUPDATES="17.04.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Alberta Ministry of Advanced Education</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>403 Legislature Bldg, 10800&amp;ndash;97 Ave, <CITY>Edmonton </CITY>,
-              AB <POSTCODE>T5K 2B6</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(780) 427-5777</NUMBER>
-          </TEL>
-          <EMAIL>ae.minister@gov.ab.ca</EMAIL>
-          <WWW>www.alberta.ca/advanced-education.aspx</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Demetrios </FORENAME>
-              <SURNAME> Nicolaides</SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805071114.0001" TOWN="Summerside" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" RETURNED="22.01.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Department of Education and Lifelong Learning, Prince Edward Island </TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <CONTACT INSTITUTE="N">
+    <SUB-LS-RI ID="CA.0.1">
+        <SUB-LS-RI-TITLE>Government</SUB-LS-RI-TITLE>
+        
+        <SECONDARY ID="CA.201805071114.0001" TOWN="Summerside" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" RETURNED="22.01.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Department of Education and Lifelong Learning, Prince Edward Island </TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <CONTACT INSTITUTE="N">
+              <EMAIL>deptell@gov.pe.ca</EMAIL>
+            </CONTACT>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>Holman Center, Suite 101, 250 Water St, <CITY>Summerside </CITY>, PE
+                  <POSTCODE>C1N 1B6</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(902) 438-4130</NUMBER>
+            </TEL>
             <EMAIL>deptell@gov.pe.ca</EMAIL>
-          </CONTACT>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>Holman Center, Suite 101, 250 Water St, <CITY>Summerside </CITY>, PE
-                <POSTCODE>C1N 1B6</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(902) 438-4130</NUMBER>
-          </TEL>
-          <EMAIL>deptell@gov.pe.ca</EMAIL>
-          <WWW>www.princeedwardisland.ca/en/topic/education-and-lifelong-learning</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Natalie</FORENAME>
-              <SURNAME>Jameson </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805071100.0001" TOWN="Halifax" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" RETURNED="25.02.2021" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Department of Labour, Skills and Immigration, Nova Scotia</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <CONTACT INSTITUTE="N">Donna Leal, Exec. Sec. to Minister, <EMAIL>donna.leal@novascotia.ca
-            </EMAIL></CONTACT>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>1505 Barrington St, POB 697, <CITY>Halifax</CITY>, NS <POSTCODE> B3J
-                2T8</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(902) 424-5301</NUMBER>
-          </TEL>
-          <EMAIL>lae-correspondence@novascotia.ca</EMAIL>
-          <WWW>beta.novascotia.ca/government/labour-skills-and-immigration</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Jill</FORENAME>
-              <SURNAME>Balser </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201804181244.0001" TOWN="Fredericton" INDEX="Y" PREVUPDATES="18.04.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Department of Post-Secondary Education, Training and Labour, New Brunswick </TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>Chestnut Complex, POB 6000, <CITY>Fredericton</CITY>, NB <POSTCODE>
-                E3B 5H1</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <ADDRESS TYPE="LOCATION" COUNTRY="0">
-            <VERBATIM-ADDRESS>Chestnut Complex, 470 York St, <CITY>Fredericton</CITY>, NB
-                <POSTCODE>E3B 3P7</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(506) 453-2597</NUMBER>
-          </TEL>
-          <EMAIL>dpetlinfo@gnb.ca</EMAIL>
-          <WWW>www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills.html </WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Trevor A.</FORENAME>
-              <SURNAME> Holder </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805071026.0001" TOWN="Victoria" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Ministry of Advanced Education and Skills Training, British Columbia </TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>POB 9080, Station Provincial Govt, <CITY>Victoria</CITY>, BC
-                <POSTCODE>V8W 9E2</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(250) 356-0179</NUMBER>
-          </TEL>
-          <EMAIL>aest.minister@gov.bc.ca</EMAIL>
-          <WWW>www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/advanced-education-skills-training </WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Anne</FORENAME>
-              <SURNAME>Kang </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805071148.0001" TOWN="Regina" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Ministry of Advanced Education, Saskatchewan</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>Minister's Office, Room 307, Legislative Bldg, 2405 Legislative Dr.,
-                <CITY>Regina</CITY>, SK <POSTCODE>S4S 0B3</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(306) 787-0341</NUMBER>
-          </TEL>
-          <EMAIL>minister.ae@gov.sk.ca</EMAIL>
-          <WWW>www.saskatchewan.ca/government/government-structure/ministries/advanced-education </WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Gene</FORENAME>
-              <SURNAME>Makowsky </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201804181554.0001" TOWN="Toronto" INDEX="Y" PREVUPDATES="18.04.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Ministry of Colleges and Universities, Ontario</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <CONTACT INSTITUTE="N">Hon. Ross Romano, Min. <EMAIL>merrilee.fullerton@ontario.ca
-            </EMAIL></CONTACT>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>438 University Ave, 5th Fl., <CITY>Toronto</CITY>, ON <POSTCODE> M74
-                2A5</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(416) 325-2929</NUMBER>
-          </TEL>
-          <WWW>www.ontario.ca/page/ministry-colleges-universities</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <ACAD-TITLE>Hon.</ACAD-TITLE>
-              <FORENAME>Jill</FORENAME>
-              <SURNAME>Dunlop </SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805041747.0001" TOWN="Winnipeg" INDEX="Y" PREVUPDATES="04.05.2018, 14.06.2018, 26.06.2019, 26.05.2021, 26.05.2022" UPDATED="02.09.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Ministry of Education and Early Childhood Learning</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>450 Broadway, <CITY>Winnipeg</CITY>, MB <POSTCODE>R3C 0V8
-              </POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(204) 945-3720</NUMBER>
-          </TEL>
-          <EMAIL>webinfo@gov.mb.ca</EMAIL>
-          <WWW>www.edu.gov.mb.ca</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister</JOB>
-            <NAME>
-              <FORENAME>Wayne</FORENAME>
-              <SURNAME>Ewasko</SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201805071134.0001" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 27.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
-        <TIBLOCK>
-          <TITLE>Ministry of Education and Higher Education, Qu&amp;eacute;bec</TITLE>
-        </TIBLOCK>
-        <BLOCK>
-          <ADDRESS TYPE="POSTAL" COUNTRY="0">
-            <VERBATIM-ADDRESS>1035 rue de la Chevroti&amp;egrave;re, <CITY>Qu&amp;eacute;bec</CITY>,
-              QC <POSTCODE>G1R 5A5</POSTCODE></VERBATIM-ADDRESS>
-          </ADDRESS>
-          <TEL AND-FAX="NO">
-            <NUMBER>(418) 643-7095</NUMBER>
-          </TEL>
-          <EMAIL>relationsmedias@education.gouv.qc.ca</EMAIL>
-          <WWW>www.education.gouv.qc.ca/accueil</WWW>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED"> Minister for Education</JOB>
-            <NAME>
-              <FORENAME>Jean-Fran&amp;ccedil;ois</FORENAME>
-              <SURNAME>Roberge</SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED">Minister for Higher Education</JOB>
-            <NAME>
-              <FORENAME>Danielle</FORENAME>
-              <SURNAME>McCann</SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-          <ADMINSTAFF>
-            <JOB STATUS="FILLED"> Minister for Education</JOB>
-            <NAME>
-              <FORENAME>Isabelle</FORENAME>
-              <SURNAME>Charest</SURNAME>
-            </NAME>
-          </ADMINSTAFF>
-        </BLOCK>
-      </SECONDARY>
-      <SECONDARY ID="CA.201906261628.0001" TOWN="" INDEX="Y" PREVUPDATES="26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+            <WWW>www.princeedwardisland.ca/en/topic/education-and-lifelong-learning</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Natalie</FORENAME>
+                <SURNAME>Jameson </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201805071100.0001" TOWN="Halifax" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" RETURNED="25.02.2021" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Department of Labour, Skills and Immigration, Nova Scotia</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <CONTACT INSTITUTE="N">Donna Leal, Exec. Sec. to Minister, <EMAIL>donna.leal@novascotia.ca
+              </EMAIL></CONTACT>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>1505 Barrington St, POB 697, <CITY>Halifax</CITY>, NS <POSTCODE> B3J
+                  2T8</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(902) 424-5301</NUMBER>
+            </TEL>
+            <EMAIL>lae-correspondence@novascotia.ca</EMAIL>
+            <WWW>beta.novascotia.ca/government/labour-skills-and-immigration</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Jill</FORENAME>
+                <SURNAME>Balser </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK><xi:include href="secondary1.dita" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </SECONDARY>
+        <SECONDARY ID="CA.201804181244.0001" TOWN="Fredericton" INDEX="Y" PREVUPDATES="18.04.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Department of Post-Secondary Education, Training and Labour, New Brunswick </TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>Chestnut Complex, POB 6000, <CITY>Fredericton</CITY>, NB <POSTCODE>
+                  E3B 5H1</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <ADDRESS TYPE="LOCATION" COUNTRY="0">
+              <VERBATIM-ADDRESS>Chestnut Complex, 470 York St, <CITY>Fredericton</CITY>, NB
+                  <POSTCODE>E3B 3P7</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(506) 453-2597</NUMBER>
+            </TEL>
+            <EMAIL>dpetlinfo@gnb.ca</EMAIL>
+            <WWW>www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills.html </WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Trevor A.</FORENAME>
+                <SURNAME> Holder </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201805071026.0001" TOWN="Victoria" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Ministry of Advanced Education and Skills Training, British Columbia </TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>POB 9080, Station Provincial Govt, <CITY>Victoria</CITY>, BC
+                  <POSTCODE>V8W 9E2</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(250) 356-0179</NUMBER>
+            </TEL>
+            <EMAIL>aest.minister@gov.bc.ca</EMAIL>
+            <WWW>www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/advanced-education-skills-training </WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Anne</FORENAME>
+                <SURNAME>Kang </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201805071148.0001" TOWN="Regina" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Ministry of Advanced Education, Saskatchewan</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>Minister's Office, Room 307, Legislative Bldg, 2405 Legislative Dr.,
+                  <CITY>Regina</CITY>, SK <POSTCODE>S4S 0B3</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(306) 787-0341</NUMBER>
+            </TEL>
+            <EMAIL>minister.ae@gov.sk.ca</EMAIL>
+            <WWW>www.saskatchewan.ca/government/government-structure/ministries/advanced-education </WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Gene</FORENAME>
+                <SURNAME>Makowsky </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201804181554.0001" TOWN="Toronto" INDEX="Y" PREVUPDATES="18.04.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Ministry of Colleges and Universities, Ontario</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <CONTACT INSTITUTE="N">Hon. Ross Romano, Min. <EMAIL>merrilee.fullerton@ontario.ca
+              </EMAIL></CONTACT>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>438 University Ave, 5th Fl., <CITY>Toronto</CITY>, ON <POSTCODE> M74
+                  2A5</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(416) 325-2929</NUMBER>
+            </TEL>
+            <WWW>www.ontario.ca/page/ministry-colleges-universities</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Jill</FORENAME>
+                <SURNAME>Dunlop </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201805041747.0001" TOWN="Winnipeg" INDEX="Y" PREVUPDATES="04.05.2018, 14.06.2018, 26.06.2019, 26.05.2021, 26.05.2022" UPDATED="02.09.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Ministry of Education and Early Childhood Learning</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>450 Broadway, <CITY>Winnipeg</CITY>, MB <POSTCODE>R3C 0V8
+                </POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(204) 945-3720</NUMBER>
+            </TEL>
+            <EMAIL>webinfo@gov.mb.ca</EMAIL>
+            <WWW>www.edu.gov.mb.ca</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <FORENAME>Wayne</FORENAME>
+                <SURNAME>Ewasko</SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201805071134.0001" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 27.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Ministry of Education and Higher Education, Qu&amp;eacute;bec</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>1035 rue de la Chevroti&amp;egrave;re, <CITY>Qu&amp;eacute;bec</CITY>,
+                QC <POSTCODE>G1R 5A5</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(418) 643-7095</NUMBER>
+            </TEL>
+            <EMAIL>relationsmedias@education.gouv.qc.ca</EMAIL>
+            <WWW>www.education.gouv.qc.ca/accueil</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED"> Minister for Education</JOB>
+              <NAME>
+                <FORENAME>Jean-Fran&amp;ccedil;ois</FORENAME>
+                <SURNAME>Roberge</SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister for Higher Education</JOB>
+              <NAME>
+                <FORENAME>Danielle</FORENAME>
+                <SURNAME>McCann</SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED"> Minister for Education</JOB>
+              <NAME>
+                <FORENAME>Isabelle</FORENAME>
+                <SURNAME>Charest</SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+        <SECONDARY ID="CA.201906261628.0001" TOWN="" INDEX="Y" PREVUPDATES="26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
         <TIBLOCK>
           <TITLE>Ministry of Education, Ontario</TITLE>
         </TIBLOCK>
@@ -331,7 +311,7 @@
           </ADMINSTAFF>
         </BLOCK>
       </SECONDARY>
-    </SUB-LS-RI></SUB-LS-RI>
+    </SUB-LS-RI>
     <SUB-LS-RI ID="CA.0.2">
       <SUB-LS-RI-TITLE>Accreditation</SUB-LS-RI-TITLE>
       <SECONDARY ID="CA.201805071226.0001" INDEX="Y" PREVUPDATES="07.05.2018" UPDATED="14.05.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">

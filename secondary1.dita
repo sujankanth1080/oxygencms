@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SECONDARY SYSTEM "countryOne.dtd">
+<?xml-stylesheet type="text/css" href="country.css"?>
+<SECONDARY ID="CA.1.1.2" INDEX="Y" APPID="0000002" PREVUPDATES="06.07.2004"
+    UPDATED="21.03.2018" RETURNED="18.08.2005" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+    <TIBLOCK>
+        <TITLE>Cooperation Canada</TITLE>
+    </TIBLOCK>
+    <BLOCK>
+        <CONTACT INSTITUTE="N">Kerolos Saleib, Communications Asst, <EMAIL>ksaleib@cooperation.ca
+        </EMAIL></CONTACT>
+        <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>39 McArthur Ave, <CITY>Ottawa</CITY>, ON <POSTCODE>K1L 8L7
+            </POSTCODE></VERBATIM-ADDRESS>
+        </ADDRESS>
+        <TEL AND-FAX="NO">
+            <NUMBER>(613) 241-7007</NUMBER>
+        </TEL>
+        <EMAIL>info@cooperation.ca</EMAIL>
+        <WWW>www.cooperation.ca</WWW>
+        <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="1968"/> (fmrly Overseas Institute of Canada, f. 1961),
+                current name adopted 2018</FOUND-PTEXT>
+        </FOUNDED>
+        <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">co-ordination centre for voluntary agencies
+            working in int. devt; 3 working groups: Africa-Canada forum, Asia-Pacific working group,
+            Americas policy group</GEN-INFO>
+        <MEMBERS>
+            <MEM-PTEXT><MEM TOTAL="93"/> mem orgs</MEM-PTEXT>
+        </MEMBERS>
+        <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres. and CEO</JOB>
+            <NAME>
+                <FORENAME>Julia</FORENAME>
+                <SURNAME>S&amp;aacute;nchez</SURNAME>
+            </NAME>
+        </ADMINSTAFF>
+    </BLOCK>
+</SECONDARY>
