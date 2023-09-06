@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Country">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Section">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="1" name="Subsection">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Institute">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Title"/>
+                                                  <xs:element name="Staff">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="FirstName"/>
+                                                  <xs:element name="LastName"/>
+                                                  <xs:element name="Address"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="1" name="Institute">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Title"/>
+                                        <xs:element name="Staff">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="FirstName"/>
+                                                  <xs:element name="LastName"/>
+                                                  <xs:element name="Address"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

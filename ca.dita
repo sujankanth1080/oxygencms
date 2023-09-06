@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CHAPTER SYSTEM "countryOne.dtd">
+<!-- [<!ENTITY secondary1 SYSTEM "secondary1.dita">]> -->
+<?xml-stylesheet type="text/css" href="country.css"?>
+
+<CHAPTER ID="CA">
+  <TITLE>Canada</TITLE>
+  <INTRO>
+    <TITLE>The Higher Education System</TITLE>
+    <PARA>Under legislation passed in 1982, the 10 provinces and three territories individually
+      enjoy autonomy over their respective higher education sectors; however, the Council of
+      Ministers of Education, Canada was created by the provincial and territorial ministers of
+      education in 1967 to take collective decisions in the national interest. The provincial and
+      territorial governments provide the majority of funding to their public post-secondary
+      institutions, with the remainder of funding coming from tuition fees, the federal Government,
+      and research grants. The Association of Universities and Colleges of Canada
+      (AUCC&amp;mdash;also known as Universities Canada) is the national organization of university
+      executive heads. Most degrees are conferred by universities or university colleges and their
+      affiliated and federated institutions, as well as by colleges of applied science, applied arts
+      and technology. Conservatories and some community colleges are also authorized to offer
+      degrees. Total enrolment at Canadian universities stood at 1,341,351 in 2020/21. The official
+      languages of Canada are French and English, but English is the language of instruction in most
+      universities except in the province of Qu&amp;eacute;bec, where French is used.</PARA>
+    <PARA>Unlike in the USA, there is no central system of accreditation for post-secondary
+      institutions in Canada, although a number of regulatory authorities perform this function for
+      certain professional programmes (such as law, medicine, engineering and architecture) within
+      these institutions. However, procedures and regulations are in place in each province and
+      territory that provide ongoing assessment of the overall quality equivalent to
+      &amp;lsquo;accreditation&amp;rsquo; as it is commonly understood. In addition, it is generally
+      held that membership of the AUCC implies that an institution is offering university-level
+      programmes of nationally acceptable standards. The Association of Accrediting Agencies of
+      Canada (established in 1994) provides a national network of professional education accrediting
+      bodies.</PARA>
+  </INTRO>
+  <RRB-GRP ID="CA.0">
+    <TITLE>Regulatory and Representative Bodies</TITLE>
+    <SUB-LS-RI ID="CA.0.1">
+        <SUB-LS-RI-TITLE>Government</SUB-LS-RI-TITLE>
+        <SECONDARY ID="CA.201804171742.0001" INDEX="Y" PREVUPDATES="17.04.2018, 14.06.2018, 26.06.2019, 26.05.2021" UPDATED="26.05.2022" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Alberta Ministry of Advanced Education</TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>403 Legislature Bldg, 10800&amp;ndash;97 Ave, <CITY>Edmonton </CITY>,AB <POSTCODE>T5K 2B6</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(780) 427-5777</NUMBER>
+            </TEL>
+            <EMAIL>ae.minister@gov.ab.ca</EMAIL>
+            <WWW>www.alberta.ca/advanced-education.aspx</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Demetrios </FORENAME>
+                <SURNAME> Nicolaides</SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+          </SECONDARY>
+        <SECONDARY ID="CA.201805071114.0001" TOWN="Summerside" INDEX="Y" PREVUPDATES="07.05.2018, 14.06.2018, 26.06.2019, 07.05.2020, 26.05.2021" UPDATED="26.05.2022" RETURNED="22.01.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+          <TIBLOCK>
+            <TITLE>Department of Education and Lifelong Learning, Prince Edward Island </TITLE>
+          </TIBLOCK>
+          <BLOCK>
+            <CONTACT INSTITUTE="N">
+              <EMAIL>deptell@gov.pe.ca</EMAIL>
+            </CONTACT>
+            <ADDRESS TYPE="POSTAL" COUNTRY="0">
+              <VERBATIM-ADDRESS>Holman Center, Suite 101, 250 Water St, <CITY>Summerside </CITY>, PE
+                  <POSTCODE>C1N 1B6</POSTCODE></VERBATIM-ADDRESS>
+            </ADDRESS>
+            <TEL AND-FAX="NO">
+              <NUMBER>(902) 438-4130</NUMBER>
+            </TEL>
+            <EMAIL>deptell@gov.pe.ca</EMAIL>
+            <WWW>www.princeedwardisland.ca/en/topic/education-and-lifelong-learning</WWW>
+            <ADMINSTAFF>
+              <JOB STATUS="FILLED">Minister</JOB>
+              <NAME>
+                <ACAD-TITLE>Hon.</ACAD-TITLE>
+                <FORENAME>Natalie</FORENAME>
+                <SURNAME>Jameson </SURNAME>
+              </NAME>
+            </ADMINSTAFF>
+          </BLOCK>
+        </SECONDARY>
+    </SUB-LS-RI>
+    <SUB-LS-RI ID="CA.0.2">
+      <SUB-LS-RI-TITLE>Accreditation</SUB-LS-RI-TITLE>
+      <SECONDARY ID="CA.201805071226.0001" INDEX="Y" PREVUPDATES="07.05.2018" UPDATED="14.05.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Bureau de Coop&amp;eacute;ration Interuniversitaire</TITLE>
+          <TRANS INDEX="1">Inter-University Cooperation Office</TRANS>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>500 rue Sherbrooke, W, Suite 200, <CITY>Montr&amp;eacute;al </CITY>,
+              QC <POSTCODE>H3A 3C6</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(514) 288-8524</NUMBER>
+          </TEL>
+          <EMAIL>info@bci-qc.ca</EMAIL>
+          <WWW>www.bci-qc.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1967"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">reviews univ. programmes; represents
+            Qu&amp;eacute;bec univs in dealings with govt authorities, other orgs, general
+            public</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Dir-Gen.</JOB>
+            <NAME>
+              <ACAD-TITLE>Dr</ACAD-TITLE>
+              <FORENAME>Ginette</FORENAME>
+              <SURNAME>Legault </SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <xi:include title="Cooperation Canada" href="secondary1.dita" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      <SECONDARY ID="EAS.200905291201.0001" TOWN="" INDEX="Y" PREVUPDATES="29.05.2009, 20.03.2018" UPDATED="14.05.2020" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Association of Accrediting Agencies of Canada</TITLE>
+          <SUPP INDEX="1">Association des Agences d'Agr&amp;eacute;ment du Canada</SUPP>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">
+            <EMAIL>kayla@megram.com</EMAIL>
+          </CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>2&amp;ndash;555 Hall Ave, E, <CITY>Renfrew</CITY>, ON <POSTCODE> K7V
+                4M7</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(613) 432-9491</NUMBER>
+          </TEL>
+          <WWW>www.aaac.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1994"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">identifies and promotes good practices for
+            accreditation standards and processes; forum for accrediting agencies and related
+            orgs</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Chair.</JOB>
+            <NAME>
+              <FORENAME>Stewart</FORENAME>
+              <SURNAME>Madon</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </SUB-LS-RI>
+  </RRB-GRP>
+  <LS-GRP ID="CA.1">
+    <TITLE>Learned Societies</TITLE>
+    <SUB-LS-RI ID="CA.1.1A">
+      <SUB-LS-RI-TITLE>Government</SUB-LS-RI-TITLE>
+      <SECONDARY ID="CA.1.1.1" INDEX="Y" APPID="0000001" PREVUPDATES="29.05.2002"
+        UPDATED="21.03.2018" RETURNED="03.01.2006" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Acad&amp;eacute;mie des Lettres du Qu&amp;eacute;bec</TITLE>
+          <TRANS INDEX="1">Academy of Letters of Qu&amp;eacute;bec</TRANS>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0" COUNTRYGIVEN="N">
+            <VERBATIM-ADDRESS>2275 rue Holt, Bureau R-75, <CITY>Montr&amp;eacute;al</CITY>, QC
+                <POSTCODE>H2G 3H1</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(514) 873-4496</NUMBER>
+          </TEL>
+          <EMAIL>secretariat@academiedeslettresduquebec.ca</EMAIL>
+          <WWW>www.academiedeslettresduquebec.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1944"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">organizes Rencontre
+            Qu&amp;eacute;b&amp;eacute;coise Internationale des &amp;Eacute;crivains (Int. Meeting
+            of Writers); coordinates readings in partnership with Biblioth&amp;egrave;que et
+            Archives Nationales du Qu&amp;eacute;bec</GEN-INFO>
+          <MEMBERS>
+            <MEM-PTEXT><MEM TOTAL="38"/> mems</MEM-PTEXT>
+          </MEMBERS>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres.</JOB>
+            <NAME>
+              <FORENAME>&amp;Eacute;mile</FORENAME>
+              <SURNAME>Martel</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Sec.-Gen.</JOB>
+            <NAME>
+              <FORENAME>Laurier</FORENAME>
+              <SURNAME>Lacroix</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      
+    </SUB-LS-RI>
+    <SUB-LS-RI ID="CA.1.2">
+      <SUB-LS-RI-TITLE TITLE="AGRICULTUREFISHERIESANDVETERINARYSCIENCE"/>
+      <SECONDARY ID="CA.1.2.1" INDEX="Y" APPID="0000006" PREVUPDATES="21.03.2018"
+        UPDATED="15.06.2021" RETURNED="04.05.2005" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Agricultural Institute of Canada (AIC)</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Alyson Queen, Dir for Communications, <EMAIL>aqueen@aic.ca
+            </EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>176 Gloucester St, Suite 320, <CITY>Ottawa</CITY>, ON <POSTCODE> K2P
+                0A6</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(613) 232-9459</NUMBER>
+          </TEL>
+          <EMAIL>office@aic.ca</EMAIL>
+          <WWW>www.aic.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="1920"/> as Canadian Soc. of Technical Agriculturists,
+              current name adopted 1944</FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">promotes cooperation and expertise sharing through
+            Int. Agricultural Devt Programme; accredits univ. baccalaureate degrees in
+            Canada&amp;rsquo;s 8 faculties of agriculture; offers AIC Fellowship Award</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">CEO</JOB>
+            <NAME>
+              <ACAD-TITLE>Dr</ACAD-TITLE>
+              <FORENAME>Serge</FORENAME>
+              <SURNAME>Buy</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Dir</JOB>
+            <NAME>
+              <FORENAME>Rajasekaran</FORENAME>
+              <SURNAME>Lada</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <PUB-GRP>
+            <PUBLICATION>
+              <JOURNAL>Canadian Journal of Animal Science</JOURNAL>
+              <ADD-JOURNAL>4 a year</ADD-JOURNAL>
+            </PUBLICATION>
+            <PUBLICATION>
+              <JOURNAL>Canadian Journal of Plant Science</JOURNAL>
+              <ADD-JOURNAL>6 a year</ADD-JOURNAL>
+            </PUBLICATION>
+            <PUBLICATION>
+              <JOURNAL>Canadian Journal of Soil Science</JOURNAL>
+              <ADD-JOURNAL>4 a year</ADD-JOURNAL>
+            </PUBLICATION>
+          </PUB-GRP>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.1.2.2" INDEX="Y" APPID="0000007" PREVUPDATES="07/08/00" UPDATED="21.03.2018"
+        PREVRETURNS="20.04.2004, 16.01.2013, 07.01.2014, 26.02.2016, 07.01.2017"
+        RETURNED="09.01.2021" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Canadian Forestry Association</TITLE>
+          <SUPP INDEX="1">Association Foresti&amp;egrave;re Canadienne</SUPP>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Dave Lemkay, Gen. Man., <EMAIL>dlemkay@bell.net</EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>6905 Highway 17 W, POB 99, <CITY>Mattawa</CITY>, ON <POSTCODE> P0H
+                1V0</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(705) 744-1715</NUMBER>
+          </TEL>
+          <EMAIL>admin@cif-ifc.org</EMAIL>
+          <WWW>www.cif-ifc.org</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1900"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">organizes Nat. Forest Week, Environthon </GEN-INFO>
+          <MEMBERS>
+            <MEM-PTEXT><MEM TOTAL="354"/> mems</MEM-PTEXT>
+          </MEMBERS>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Gen. Man.</JOB>
+            <NAME>
+              <FORENAME>Dave</FORENAME>
+              <SURNAME>Lemkay</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </SUB-LS-RI>
+  </LS-GRP>
+  <RI-GRP ID="CA.2">
+    <TITLE>Research Institutes</TITLE>
+    <SUB-LS-RI ID="CA.2.1">
+      <SUB-LS-RI-TITLE TITLE="GENERAL"/>
+      <SECONDARY ID="CA.2.1.1" INDEX="Y" APPID="0000097"
+        PREVUPDATES="29.05.2002; 17/08/01; 07/08/00" UPDATED="24.06.2003"
+        PREVRETURNS="20.05.2010, 04.02.2011" RETURNED="24.02.2015" DP="NO" SLLINK="SLsdoc"
+        SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Alberta Innovates</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Lucy Heintz, Library Technician
+              <EMAIL>lucy.heintz@albertainnovates.ca </EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0" COUNTRYGIVEN="N">
+            <VERBATIM-ADDRESS>250 Karl Clark Rd, <CITY>Edmonton</CITY>, AB <POSTCODE> T6N
+                1E4</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(780) 450-5111</NUMBER>
+          </TEL>
+          <EMAIL>info@albertainnovates.ca</EMAIL>
+          <WWW>www.albertainnovates.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="2016"/>by merger of Bio Solutions, Energy and Environment
+              Solutions, Health Solutions, Technology Futures</FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">focus areas: health innovation, bio sector, clean
+            energy, cross sectoral investments; incl. InnoTech Alberta, C-Fer
+            Technologies</GEN-INFO>
+          <LIB-VOL LIBRARY="0">
+            <LIB-PTEXT><VOL TOTAL="15000"/> vols, 3,500 reports, 100 current periodicals
+            </LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">CEO</JOB>
+            <NAME>
+              <FORENAME>Laura J.</FORENAME>
+              <SURNAME>Kilcrease</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.201804171639.0001" INDEX="Y" PREVUPDATES="17.04.2018" UPDATED="15.06.2021"
+        DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Canadian Institute for Advanced Research (CIFAR)</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Paula Driedger, Programmes and Information Officer, <EMAIL>
+              paula.driedger@cifar.ca</EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>MaRS Centre, West Tower, 661 University Ave, Suite 505, <CITY>
+                Toronto</CITY>, ON <POSTCODE>M5G 1M1</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(416) 971-4251</NUMBER>
+          </TEL>
+          <WWW>www.cifar.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1982"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">research programmes incl. Azrieli program in
+            brain, mind and consciousness; bio-inspired solar energy; child and brain devt; genetic
+            networks; gravity and the extreme universe; humans and the microbiome; instns, orgs and
+            growth; learning in machines and brains; molecular architecture of life; quantum
+            information science; quantum materials; successful socs</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres. and CEO</JOB>
+            <NAME>
+              <FORENAME>Alan</FORENAME>
+              <SURNAME>Bernstein</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </SUB-LS-RI>
+    <SUB-LS-RI ID="CA.2.2">
+      <SUB-LS-RI-TITLE TITLE="AGRICULTUREFISHERIESANDVETERINARYSCIENCE"/>
+      <SECONDARY ID="CA.201805101611.0001" TOWN="Ottawa" INDEX="Y"
+        PREVUPDATES="10.05.2018, 15.06.2021" UPDATED="30.08.2022" DP="NO" SLLINK="SLsdoc"
+        SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Agriculture and Agri-Food Canada</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Media enquiries, <EMAIL>media@agr.gc.ca</EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>1341 Baseline Rd, <CITY>Ottawa</CITY>, ON <POSTCODE>K1A
+              0C5</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(613) 773-2600</NUMBER>
+          </TEL>
+          <EMAIL>aafc.info.aac@agr.gc.ca</EMAIL>
+          <WWW>www.agr.gc.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="1867"/> as Dept of Agriculture</FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">works with provincial and territorial govts for
+            the devt and delivery of policies and programmes; research and devt centres in Lacombe
+            and Lethbridge (AB); Agassiz and Summerland (BC); Brandon and Morden (MB); Fredericton
+            (NB); Kentville (NS); Guelph, Harrow, London and Ottawa (ON); Qu&amp;eacute;bec City,
+            St-Hyacinthe, St-Jean-sur-Richelieu and Sherbrooke (QC); St John&amp;rsquo;s (NL);
+            Charlottetown (PE); Saskatoon and Swift Current (SK)</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Minister</JOB>
+            <NAME>
+              <ACAD-TITLE>Hon.</ACAD-TITLE>
+              <FORENAME>Marie-Claude</FORENAME>
+              <SURNAME> Bibeau</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.2.2.1" INDEX="Y" APPID="0000105" UPDATED="02.04.2018" RETURNED="08.06.2007"
+        DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Canadian Forest Service</TITLE>
+          <SUPP INDEX="1">Service Canadien des For&amp;ecirc;ts</SUPP>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS><CITY>Ottawa</CITY>, ON <POSTCODE>K1A
+              0E4</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <WWW>www.nrcan.gc.ca/forests</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1899"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <ATTACHED-TO> Natural Resources Canada</ATTACHED-TO>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">provides expertise on forest and forest fire
+            monitoring, insect and disease identification, climate change, biodiversity,
+            conservation; provides statistical data; supports FPInnovations (see Research
+            Institutes, Technology) and research at Canadian forestry schools; incl. Atlantic
+            Forestry Centre, Canadian Wood Fibre Centre, Great Lakes Forestry Centre, Laurentian
+            Forestry Centre, Northern Forestry Centre, Pacific Forestry Centre </GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Asst Deputy Min.</JOB>
+            <NAME>
+              <FORENAME>Beth</FORENAME>
+              <SURNAME>MacNeil</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.2.2.2" TOWN="Ottawa" INDEX="Y" APPID="0000106" PREVUPDATES="07.07.2004"
+        UPDATED="02.04.2018" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Dominion Arboretum and the Central Experimental Farm</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>Bldg 72, Central Experimental Farm, <CITY>Ottawa</CITY>, ON
+                <POSTCODE>K1A 0C6</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(613) 230-3276</NUMBER>
+          </TEL>
+          <EMAIL>info@friendsofthefarm.ca</EMAIL>
+          <WWW>www.friendsofthefarm.ca/about-the-farm</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1886"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <ATTACHED-TO> Dept of Agriculture and Agri-Food Canada</ATTACHED-TO>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">evaluation of woody plants for cold hardiness and
+            adaptability; special living collns</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Dir</JOB>
+            <NAME>
+              <FORENAME>Doug</FORENAME>
+              <SURNAME>Shouldice</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </SUB-LS-RI>
+  </RI-GRP>
+  <LA-GRP ID="CA.3">
+    <TITLE>Libraries and Archives</TITLE>
+    <REGION ID="CA.3.1" STATUS="STATE">
+      <TITLE>Alberta</TITLE>
+      <SECONDARY ID="CA.3.1.1" INDEX="Y" APPID="0000129" PREVUPDATES="08.07.2004"
+        UPDATED="12.04.2018" RETURNED="08.06.2007" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Calgary Public Library</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N"> Mary Kapusta, Dir for Communications,
+              <EMAIL>mary.kapusta@calgarylibrary.ca </EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>6th Fl., 616 Macleod Trail SE, <CITY>Calgary</CITY>, AB <POSTCODE> T2G
+                2M2</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(403) 260-2600</NUMBER>
+          </TEL>
+          <WWW>www.calgarylibrary.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1912"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">spec. section on petroleum</GEN-INFO>
+          <LIB-VOL LIBRARY="0">
+            <LIB-PTEXT>2.3m. vols</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">CEO</JOB>
+            <NAME>
+              <FORENAME>Bill</FORENAME>
+              <SURNAME>Ptacek</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.3.1.2" INDEX="Y" APPID="0000130"
+        PREVUPDATES="17.08.2001; 08.07.2004, 24.03.2008" UPDATED="12.04.2018"
+        PREVRETURNS="15/08/00; 03.05.2005, 24.05.2006, 09.01.2013" RETURNED="26.01.2016" DP="NO"
+        SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>City of Edmonton Archives</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>10440, 108th Ave, <CITY>Edmonton</CITY>, AB <POSTCODE>T5H
+                3Z9</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(780) 496-8711</NUMBER>
+          </TEL>
+          <EMAIL>cms.archives@edmonton.ca</EMAIL>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1967"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">incl. photographs dating back to 1880, 700 maps of
+            Edmonton since 1882, artwork by 49 Edmonton artists, colln of newspaper clippings, files
+            from 1920</GEN-INFO>
+          <LIB-VOL LIBRARY="1">
+            <LIB-PTEXT><VOL TOTAL="10000"/> vols, 700 spec. archives</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">City Archivist</JOB>
+            <NAME>
+              <FORENAME>Kathryn</FORENAME>
+              <SURNAME>Ivany</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </REGION>
+    <REGION ID="CA.3.2" STATUS="STATE">
+      <TITLE>British Columbia</TITLE>
+      <SECONDARY ID="CA.3.2.1" TOWN="Victoria" INDEX="Y" APPID="0000138"
+        PREVUPDATES="22/08/00, 08.07.2004, 12.04.2018" UPDATED="15.06.2021"
+        PREVRETURNS="17/08/01, 29.05.2002" RETURNED="05.01.2023" DP="NO" SLLINK="SLsdoc"
+        SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>British Columbia Archives</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Emma Wright, Dir of Archives, <EMAIL>e.wright@royalbcmuseum.bc.ca
+            </EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>675 Belleville St, <CITY>Victoria</CITY>, BC <POSTCODE> V8W
+                9W2</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(250) 387-1952</NUMBER>
+          </TEL>
+          <EMAIL>access@royalbcmuseum.bc.ca</EMAIL>
+          <WWW>www.royalbcmuseum.bc.ca/archives/about-us/about-bc-archives</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="1893"/>, present status 2003</FOUND-PTEXT>
+          </FOUNDED>
+          <ATTACHED-TO>Royal British Columbia Museum</ATTACHED-TO>
+          <LIB-VOL LIBRARY="1">
+            <LIB-PTEXT><VOL TOTAL="72300"/> vols, 11,000 microfilm reels of newspapers; also 90,000
+              boxes of govt textual records; 20,000 boxes of non-govt textual records; 12,600 video
+              cassettes; 27,000 recordings; 5.5m. photographs; 10,900 paintings, drawings and
+              prints; 180,000 maps, atlases and architectural drawings; court records</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Dir of Archives</JOB>
+            <NAME>
+              <FORENAME>Emma</FORENAME>
+              <SURNAME>Wright</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.3.2.2" INDEX="Y" APPID="0000139" PREVUPDATES="08.07.2004"
+        UPDATED="12.04.2018" RETURNED="27.5.2010" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Fraser Valley Regional Library</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Mary Kierans <EMAIL>mary.kierans@fvrl.bc.ca</EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>Admin. Centre, 34589 Delair Rd, <CITY>Abbotsford</CITY>, BC
+                <POSTCODE>V2S 5Y1</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(604) 859-7141</NUMBER>
+          </TEL>
+          <WWW>www.fvrl.bc.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1930"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <LIB-VOL LIBRARY="1">
+            <LIB-PTEXT><VOL TOTAL="900000"/> vols, 10,000 talking books</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">CEO</JOB>
+            <NAME>
+              <FORENAME>Scott</FORENAME>
+              <SURNAME>Hargrove</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </REGION>
+  </LA-GRP>
+  <MG-GRP ID="CA.4">
+    <TITLE>Museums and Art Galleries</TITLE>
+    <REGION ID="CA.4.1" STATUS="STATE">
+      <TITLE>Alberta</TITLE>
+      <SECONDARY ID="CA.4.1.3" INDEX="Y" APPID="0000220" PREVUPDATES="03.04.2018"
+        UPDATED="15.06.2021" PREVRETURNS="07.06.2004,16.11.2007, 12.5.2010" RETURNED="22.02.2011"
+        DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Art Gallery of Alberta</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">
+            <EMAIL>collections@youraga.ca.</EMAIL>
+          </CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>2 Sir Winston Churchill Sq., <CITY>Edmonton</CITY>, AB <POSTCODE> T5J
+                2C1</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(780) 425-5379</NUMBER>
+          </TEL>
+          <EMAIL>info@youraga.ca</EMAIL>
+          <WWW>www.youraga.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1924"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">colln of 6,000 contemporary works; 1,500
+            contemporary and historical photographs; colln of prints by Thomas Bewick </GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Exec. Dir and Chief Curator</JOB>
+            <NAME>
+              <FORENAME>Catherine</FORENAME>
+              <SURNAME>Crowston</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.4.1.1" INDEX="Y" APPID="0000218"
+        PREVUPDATES="22/08/00; 30.05.2002, 05.06.2003" UPDATED="03.04.2018" DP="NO" SLLINK="SLsdoc"
+        SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Banff Park Museum</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">The Historic Sites Supervisor<EMAIL>caveandbasin@pc.gc.ca
+            </EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0" COUNTRYGIVEN="N">
+            <VERBATIM-ADDRESS>91 Banff Ave, <CITY>Banff</CITY>, AB <POSTCODE>T1L
+              1K2</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(403) 762-1558</NUMBER>
+          </TEL>
+          <EMAIL>banff.vrc@pc.gc.ca</EMAIL>
+          <WWW>www.pc.gc.ca/en/lhn-nhs/ab/banff</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1895"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">taxidermy colln of 5,000 natural history
+            specimens</GEN-INFO>
+        </BLOCK>
+      </SECONDARY>
+    </REGION>
+    <REGION ID="CA.4.2" STATUS="STATE">
+      <TITLE>British Columbia</TITLE>
+      <SECONDARY ID="CA.4.2.1" INDEX="Y" APPID="0000227" PREVUPDATES="10.07.2004"
+        UPDATED="27.04.2008" PREVRETURNS="11.07.2006" RETURNED="22.01.2014" DP="NO" SLLINK="SLsdoc"
+        SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Helmcken House Museum</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">
+            <EMAIL>reception@royalbcmuseum.bc.ca</EMAIL>
+          </CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>c/o Royal BC Museum, 675 Belleville St, <CITY>Victoria</CITY>, BC
+                <POSTCODE>V8W 9W2</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(250) 356-7226</NUMBER>
+          </TEL>
+          <WWW>royalbcmuseum.bc.ca/exhibits/tbird-park/html/present/preshelm.htm</WWW>
+          <ATTACHED-TO>Royal BC Museum</ATTACHED-TO>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">19th-century medical kit of Dr John Sebastian
+            Helmcken; domestic arts, Christmas traditions</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Curator of Human History, Royal BC Museum</JOB>
+            <NAME>
+              <FORENAME>Lorne</FORENAME>
+              <SURNAME>Hammond</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.201805291147.0001" TOWN="Vernon" INDEX="Y" UPDATED="29.05.2018"
+        PREVRETURNS="23.01.2019, 07.01.2020, 20.01.2021" RETURNED="06.04.2022" DP="NO"
+        SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Museum and Archives of Vernon</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Gwyneth Evans, Community Engagement Co-ordinator, <EMAIL>
+              gwynethdianne@gmail.com</EMAIL></CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>3009 32nd Ave, <CITY>Vernon</CITY>, BC <POSTCODE>V1T 2L8
+              </POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(250) 550-3140</NUMBER>
+          </TEL>
+          <EMAIL>mail@vernonmuseum.ca</EMAIL>
+          <WWW>www.vernonmuseum.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1950"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">collns of c. 250 record groups incl. Allan Brooks,
+            Argillite, British Columbia Dragoons, Charles Holiday, human history, Prince of Wales
+            Ice Pail; topographical, contour, and historical maps; archives incl. 450 local history
+            topics, 30,000 historic images, interior Salish, and 1,500 biographical information,
+            2,800 rare publs</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Exec. Dir</JOB>
+            <NAME>
+              <FORENAME>Steve</FORENAME>
+              <SURNAME>Fleck</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Archivist</JOB>
+            <NAME>
+              <FORENAME>Barbara</FORENAME>
+              <SURNAME>Bell</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </REGION>
+  </MG-GRP>
+  <UC-GRP ID="CA.5">
+    <SUB-UC ID="CA.5.1">
+      <TITLE>Universities</TITLE>
+      <PRIMARY ID="CA.5.1.6" INDEX="Y" APPID="0000285"
+        PREVUPDATES="08.10.2003, 26.05.2009, 19.01.2015, 09.03.2015, 13.02.2018, 23.03.2018, 01.07.2019, 31.07.2019, 09.08.2021"
+        UPDATED="09.12.2021" PREVRETURNS="21.04.2009, 08.04.2013" RETURNED="05.03.2015" DP="NO"
+        SLLINK="SLsdoc" SLSDOCRF="pref">
+        <TIBLOCK>
+          <TITLE>Brandon University</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <CONTACT INSTITUTE="N">Kristen Fisher, Administrative Officer</CONTACT>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>270, 18th St, <CITY>Brandon</CITY>, MB <POSTCODE>R7A 6A9
+              </POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(204) 728-9520</NUMBER>
+          </TEL>
+          <EMAIL>admissions@brandonu.ca</EMAIL>
+          <WWW>www.brandonu.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="1899"/> as Brandon College, present name and status
+              1967</FOUND-PTEXT>
+          </FOUNDED>
+          <CONTROL>institutional control: public</CONTROL>
+          <LANGUAGE>
+            <SPOKEN LANG="English"/>
+          </LANGUAGE>
+          <ACAD-YEAR>
+            <FROM-MONTH MONTH="SEPTEMBER"/>
+            <TO-MONTH MONTH="APRIL"/>
+          </ACAD-YEAR>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Chancellor</JOB>
+            <NAME>
+              <FORENAME>Michael</FORENAME>
+              <SURNAME>Decter</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres. and Vice-Chancellor</JOB>
+            <NAME>
+              <ACAD-TITLE>Dr</ACAD-TITLE>
+              <FORENAME>David</FORENAME>
+              <SURNAME>Docherty </SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Provost and Vice-Pres. for Acad.</JOB>
+            <NAME>
+              <ACAD-TITLE>Dr</ACAD-TITLE>
+              <FORENAME>Kofi</FORENAME>
+              <SURNAME>Campbell </SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Vice-Pres. for Admin. and Finance</JOB>
+            <NAME>
+              <FORENAME>Scott J. B.</FORENAME>
+              <SURNAME>Lamont</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Dean for Students</JOB>
+            <NAME>
+              <FORENAME>Katie</FORENAME>
+              <SURNAME>Gross</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Univ. Registrar</JOB>
+            <NAME>
+              <FORENAME>Andrea</FORENAME>
+              <SURNAME>McDaniel</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Univ. Librarian</JOB>
+            <NAME>
+              <FORENAME>Betty</FORENAME>
+              <SURNAME>Braaksma</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <TEACHER>
+            <TEACH-PTEXT>
+              <TEACH-TOTAL TOTAL="210"/>(full- and part-time)</TEACH-PTEXT>
+          </TEACHER>
+          <STUDENT>
+            <STUDENT-PTEXT><STUDENT-TOTAL TOTAL="3000"/> (full- and part-time)</STUDENT-PTEXT>
+          </STUDENT>
+          <PUB-GRP>
+            <PUBLICATION>
+              <JOURNAL>Canadian Journal of Native Studies</JOURNAL>
+              <ADD-JOURNAL>2 a year</ADD-JOURNAL>
+            </PUBLICATION>
+            <PUBLICATION>
+              <JOURNAL>Journal of Rural and Community Development</JOURNAL>
+              <ADD-JOURNAL>2 a year</ADD-JOURNAL>
+            </PUBLICATION>
+          </PUB-GRP>
+        </BLOCK>
+        <ADDONLIST>
+          <ROLELIST>
+            <ROLELIST-TITLE TITLE="DEANS"/>
+            <STAFFLIST>
+              <STAFF>
+                <SUBJECT STATUS="ACTING">Faculty of Arts</SUBJECT>
+                <NAME>
+                  <ACAD-TITLE>Dr</ACAD-TITLE>
+                  <FORENAME>Balfour</FORENAME>
+                  <SURNAME>Spence </SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Education</SUBJECT>
+                <NAME>
+                  <ACAD-TITLE>Dr</ACAD-TITLE>
+                  <FORENAME>Heather</FORENAME>
+                  <SURNAME>Duncan </SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Graduate Studies</SUBJECT>
+                <NAME>
+                  <ACAD-TITLE>Dr</ACAD-TITLE>
+                  <FORENAME>Demetrios</FORENAME>
+                  <SURNAME>Tryphonopoulos </SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Health Studies</SUBJECT>
+                <NAME>
+                  <ACAD-TITLE>Dr</ACAD-TITLE>
+                  <FORENAME>W. Dean</FORENAME>
+                  <SURNAME>Care </SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Science</SUBJECT>
+                <NAME>
+                  <ACAD-TITLE>Dr</ACAD-TITLE>
+                  <FORENAME>Bernadette</FORENAME>
+                  <SURNAME> Ardelli</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">School of Music</SUBJECT>
+                <NAME>
+                  <FORENAME>Greg</FORENAME>
+                  <SURNAME>Gatien</SURNAME>
+                </NAME>
+              </STAFF>
+            </STAFFLIST>
+          </ROLELIST>
+        </ADDONLIST>
+      </PRIMARY>
+      <PRIMARY ID="CA.5.1.8" TOWN="St Catharines" INDEX="Y" APPID="0000287"
+        PREVUPDATES="08.10.2003, 02.06.2014, 08.07.2015, 11.12.2015, 26.08.2016, 20.10.2016, 10.11.2017, 29.03.2018, 07.07.2020, 21.08.2020, 23.11.2020, 16.07.2021, 04.03.2022"
+        UPDATED="07.02.2023" PREVRETURNS="02.08.2006, 22.06.2004; 03.06.2005 , 08.06.2007"
+        RETURNED="31.03.2011" DP="NO" SLLINK="SLsdoc" SLSDOCRF="pref">
+        <TIBLOCK>
+          <TITLE>Brock University</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>1812 Sir Isaac Brock Way, <CITY>St Catharines</CITY>, ON <POSTCODE>
+                L2S 3A1</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(905) 688-5550</NUMBER>
+          </TEL>
+          <EMAIL>admissions@brocku.ca</EMAIL>
+          <WWW>www.brocku.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1964"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <CONTROL>institutional control: public</CONTROL>
+          <ACAD-YEAR>
+            <FROM-MONTH MONTH="SEPTEMBER"/>
+            <TO-MONTH MONTH="APRIL"/>
+          </ACAD-YEAR>
+          <LANGUAGE>
+            <SPOKEN LANG="English"/>
+          </LANGUAGE>
+          <GEN-INFO BEFORE="1" AFTER="Y" HANG="H">campus in Hamilton; incl. Marilyn I. Walker School
+            of Fine and Performing Arts</GEN-INFO>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Chancellor</JOB>
+            <NAME>
+              <FORENAME>Hilary</FORENAME>
+              <SURNAME>Pearson</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres. and Vice-Chancellor</JOB>
+            <NAME>
+              <ACAD-TITLE>Dr</ACAD-TITLE>
+              <FORENAME>Lesley</FORENAME>
+              <SURNAME>Rigg </SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Provost and Vice-Pres. for Acad.</JOB>
+            <NAME>
+              <FORENAME>Lynn</FORENAME>
+              <SURNAME>Wells</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Vice-Pres. for Admin.</JOB>
+            <NAME>
+              <FORENAME>Ken</FORENAME>
+              <SURNAME>Chan</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Vice-Pres. for Research</JOB>
+            <NAME>
+              <FORENAME>Tim</FORENAME>
+              <SURNAME>Kenyon</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Registrar</JOB>
+            <NAME>
+              <FORENAME>Barb</FORENAME>
+              <SURNAME>Davis</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Univ. Librarian</JOB>
+            <NAME>
+              <FORENAME>Mark</FORENAME>
+              <SURNAME>Robertson</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <LIB-VOL LIBRARY="0">
+            <LIB-PTEXT>2.1m. vols</LIB-PTEXT>
+          </LIB-VOL>
+          <TEACHER>
+            <TEACH-PTEXT>
+              <TEACH-TOTAL TOTAL="590"/>
+            </TEACH-PTEXT>
+          </TEACHER>
+          <STUDENT>
+            <STUDENT-PTEXT>
+              <STUDENT-TOTAL TOTAL="18000"/>
+            </STUDENT-PTEXT>
+          </STUDENT>
+        </BLOCK>
+        <ADDONLIST>
+          <ROLELIST>
+            <ROLELIST-TITLE TITLE="DEANS"/>
+            <STAFFLIST>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Applied Health Sciences</SUBJECT>
+                <NAME>
+                  <FORENAME>Peter</FORENAME>
+                  <SURNAME>Tiidus</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Education</SUBJECT>
+                <NAME>
+                  <FORENAME>Michael</FORENAME>
+                  <SURNAME>Owen</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Graduate Studies</SUBJECT>
+                <NAME>
+                  <FORENAME>Suzanne Lea</FORENAME>
+                  <SURNAME>Curtin</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Humanities</SUBJECT>
+                <NAME>
+                  <FORENAME>Carol</FORENAME>
+                  <SURNAME>Merriam</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Mathematics and Science</SUBJECT>
+                <NAME>
+                  <FORENAME>Ejaz</FORENAME>
+                  <SURNAME>Ahmed</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Faculty of Social Sciences</SUBJECT>
+                <NAME>
+                  <FORENAME>Ingrid</FORENAME>
+                  <SURNAME>Makus</SURNAME>
+                </NAME>
+              </STAFF>
+              <STAFF>
+                <SUBJECT STATUS="FILLED">Goodman School of Business</SUBJECT>
+                <NAME>
+                  <FORENAME>Andrew</FORENAME>
+                  <SURNAME>Gaudes</SURNAME>
+                </NAME>
+              </STAFF>
+            </STAFFLIST>
+          </ROLELIST>
+        </ADDONLIST>
+      </PRIMARY>
+    </SUB-UC>
+    <SUB-UC ID="CA.5.3">
+      <TITLE>Colleges</TITLE>
+      <SECONDARY ID="CA.201804131116.0001" TOWN="Vancouver" INDEX="Y" PREVUPDATES="13.04.2018"
+        UPDATED="09.12.2021" RETURNED="" DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Acsenda School of Management</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>9th Fl., 1090 West Pender St, <CITY>Vancouver</CITY>, BC <POSTCODE>
+                V6E 2N7</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(604) 430-5111</NUMBER>
+          </TEL>
+          <EMAIL>info@acsenda.com</EMAIL>
+          <WWW>www.acsenda.com</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT><FOUND-DATE YEAR="2004"/> as Sprott-Shaw Community College, current name
+              adopted 2013</FOUND-PTEXT>
+          </FOUNDED>
+          <LIB-VOL LIBRARY="0">
+            <LIB-PTEXT>180,000 ebooks, 21,500 ejournals</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres.</JOB>
+            <NAME>
+              <FORENAME>Neil</FORENAME>
+              <SURNAME>Mort</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Vice-Pres. for Acad. and Dean</JOB>
+            <NAME>
+              <FORENAME>Teresita</FORENAME>
+              <SURNAME>Ireneo-Manalo</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+      <SECONDARY ID="CA.201804121131.0001" INDEX="Y" PREVUPDATES="" UPDATED="12.04.2018" RETURNED=""
+        DP="NO" SLLINK="SLsdoc" SLSDOCRF="sref">
+        <TIBLOCK>
+          <TITLE>Alberta Bible College</TITLE>
+        </TIBLOCK>
+        <BLOCK>
+          <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>635 Northmount Dr. NW, <CITY>Calgary</CITY>, AB <POSTCODE> T2K
+                3J6</POSTCODE></VERBATIM-ADDRESS>
+          </ADDRESS>
+          <TEL AND-FAX="NO">
+            <NUMBER>(403) 282-2994</NUMBER>
+          </TEL>
+          <EMAIL>admissions@abccampus.ca</EMAIL>
+          <WWW>www.abccampus.ca</WWW>
+          <FOUNDED>
+            <FOUND-PTEXT>
+              <FOUND-DATE YEAR="1932"/>
+            </FOUND-PTEXT>
+          </FOUNDED>
+          <LIB-VOL LIBRARY="0">
+            <LIB-PTEXT><VOL TOTAL="30000"/> vols</LIB-PTEXT>
+          </LIB-VOL>
+          <ADMINSTAFF>
+            <JOB STATUS="FILLED">Pres.</JOB>
+            <NAME>
+              <FORENAME>Stanley N.</FORENAME>
+              <SURNAME>Helton</SURNAME>
+            </NAME>
+          </ADMINSTAFF>
+        </BLOCK>
+      </SECONDARY>
+    </SUB-UC>
+  </UC-GRP>
+</CHAPTER>

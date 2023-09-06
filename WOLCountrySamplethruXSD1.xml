@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Country>
+    <Section>
+        <Subsection>
+            <Institute>
+                <Title>GPREC India</Title>
+                <Staff>
+                    <FirstName>Sujan</FirstName>
+                    <LastName>Manchi</LastName>
+                    <FirstName>Sujan</FirstName>
+                    <Address>Bangalore</Address>
+                </Staff>
+            </Institute>
+        </Subsection>
+        <Institute>
+            <Title>NIT India</Title>
+            <Staff>
+                <FirstName>Vamsee</FirstName>
+                <LastName>Manchi</LastName>
+                <Address>Hyd</Address>
+            </Staff>
+        </Institute>
+    </Section>
+</Country>

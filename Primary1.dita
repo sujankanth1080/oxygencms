@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PRIMARY SYSTEM "CountryF1.dtd">
+<PRIMARY ID="CA.201804191152.0001" INDEX="Y" PREVUPDATES="" UPDATED="19.04.2018"
+    PREVRETURNS="" RETURNED="" DP="NO" SLLINK="SLsdoc" SLSDOCRF="pref">
+    <TIBLOCK>
+        <TITLE>Adler University, Vancouver</TITLE>
+    </TIBLOCK>
+    <BLOCK>
+        <ADDRESS TYPE="POSTAL" COUNTRY="0">
+            <VERBATIM-ADDRESS>520 Seymour St, <CITY>Vancouver</CITY>, BC <POSTCODE>V6B
+                3J5</POSTCODE></VERBATIM-ADDRESS>
+        </ADDRESS>
+        <TEL AND-FAX="NO">
+            <NUMBER>(236) 521-2500</NUMBER>
+        </TEL>
+        <EMAIL>vanadmissions@adler.edu</EMAIL>
+        <WWW>www.adler.edu/page/campuses/vancouver</WWW>
+        <CONTROL>institutional control: private</CONTROL>
+        <ADMINSTAFF>
+            <JOB STATUS="FILLED">Exec. Dean</JOB>
+            <NAME>
+                <FORENAME>Bradley</FORENAME>
+                <SURNAME>O&amp;rsquo;Hara</SURNAME>
+            </NAME>
+        </ADMINSTAFF>
+        <ADMINSTAFF>
+            <JOB STATUS="FILLED">Librarian</JOB>
+            <NAME>
+                <FORENAME>Alexandra</FORENAME>
+                <SURNAME>Dobre</SURNAME>
+            </NAME>
+        </ADMINSTAFF>
+    </BLOCK>
+</PRIMARY>

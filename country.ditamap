@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map>
-    <title>Country</title>
-    <topicref href="DITATopicSexample_hierarchy.dita">
-        <topicref href="externalditafile.dita"/>
-        <topicref href="DITATopicSon_windows.dita"/>
-        <topicref href="additiontopic.dita">
-            <topicref href="externalditafile.dita"/>
-        </topicref>
-        <topicref href="DITATopicSconversion.dita">
-            <topicref href="DITATopicSto_pdf.dita"/>
-            <topicref href="DITATopicSto_html.dita"/>
-        </topicref>
-        <topicref href="DITATopicSinstallation.dita">
-            <topicref href="DITATopicSon_mac.dita">
-                <topicref href="DITATopicSspecial_considerations.dita"/>
-            </topicref>
-        </topicref>
-    </topicref>
-</map>
+<!DOCTYPE country SYSTEM "country.dtd">
+<country>
+    <section></section>
+</country>

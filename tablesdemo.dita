@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tablesdemo">
+    <title>TablesDemo</title>
+    <body>
+        <table conref="sujanreusable#ReusableComponent_khj_cyx_5xb/table_xxk_kxx_5xb"
+            id="table_klj_cyx_5xb">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p/>
+    </body>
+</topic>

@@ -1,0 +1,95 @@
+*{
+    font-size:12px;
+    font-family: arial, helvetica, sans-serif;
+    letter-spacing: .55px;
+    line-height: 1.57;
+    color: #000;
+    margin-left:5px;
+}
+CHATPTER{
+    background-color: #f7f7f7;
+    letter-spacing: .55px;
+}
+CHAPTER > *{
+    display:block;
+    margin:20px;
+}
+CHAPTER > TITLE{
+    color:#000;
+    padding:10px;
+    font-weight: 900;
+    font-size: 30px;
+}
+CHAPTER * > PARA{
+    padding:10px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: .3px;
+    color: #000;
+    display:block;
+}
+CHAPTER INTRO > TITLE, 
+CHAPTER RRB-GRP > TITLE, 
+CHAPTER LS-GRP > TITLE,
+CHAPTER RI-GRP > TITLE,
+CHAPTER LA-GRP > TITLE,
+CHAPTER MG-GRP > TITLE,
+CHAPTER UC-GRP > TITLE{
+    background-color: #eee;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-top: 0;
+    color: #000;
+    padding: 10px;
+    display:block;
+    
+}
+CHAPTER RRB-GRP * > TITLE, CHAPTER LS-GRP * > TITLE{
+
+}
+CHAPTER * > SUB-LS-RI > SUB-LS-RI-TITLE,
+CHAPTER * > REGION > TITLE,
+CHAPTER * > SUB-UC > TITLE{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .33px;
+    color: #000;
+    margin-left:10px;
+}
+SECONDARY, PRIMARY{
+    padding-bottom:20px;
+}
+SECONDARY TIBLOCK TITLE,
+PRIMARY TIBLOCK TITLE{
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .33px;
+    color: #000;
+    display:block;
+}
+PRIMARY BLOCK *,
+SECONDARY BLOCK *{
+    letter-spacing: .3px;
+    color: #000;
+    font-size:11px;
+}
+
+PRIMARY BLOCK > ADDRESS > *,
+SECONDARY BLOCK > ADDRESS > *{
+    display: inline-block;
+    letter-spacing: .3px;
+    color: #000;
+}
+PRIMARY BLOCK > *,
+SECONDARY BLOCK > *{
+    display: list-item;
+    line-height: 1.57;
+    letter-spacing: .3px;
+    margin-left:10px;
+}
+
